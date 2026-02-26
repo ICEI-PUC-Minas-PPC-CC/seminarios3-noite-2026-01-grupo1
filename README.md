@@ -10,16 +10,16 @@
 
 | Campo | Informação |
 | ------- | ----------- |
-| **Nome do Grupo** | *(preencher)* |
-| **Integrantes** | *(listar todos)* |
-| **E-mail de contato** | *(preencher)* |
-| **Comunidade parceira** | *(preencher)* |
+| **Nome do Grupo** | Grupo 1 |
+| **Integrantes** | Danthe Belo, Laura Assis Monteiro, Thiago Baruffaldi de Carvalho |
+| **E-mail de contato** | thiagobaruffaldi42@gmail.com |
+| **Comunidade parceira** | Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra |
 
 ---
 
 ## 🎯 Software a Ser Desenvolvido
 
-(Descreva brevemente a aplicação que será desenvolvida e seu objetivo.)
+Desenvolvimento web de um glossário de Libras.
 
 ---
 
