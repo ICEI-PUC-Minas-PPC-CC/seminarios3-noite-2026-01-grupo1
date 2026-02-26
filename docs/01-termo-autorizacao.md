@@ -15,18 +15,18 @@
 
 | Campo | Informação |
 | ------- | ----------- |
-| Nome do Grupo | |
-| Integrantes | |
-| E-mail de contato | |
-| Telefone de contato | |
+| Nome do Grupo | Grupo 1 |
+| Integrantes | Danthe Belo de Souza Barros, Laura Assis Monteiro, Thiago Baruffaldi de Carvalho |
+| E-mail de contato | thiagobaruffaldi42@gmail.com |
+| Telefone de contato | 55 35 99721-0906 |
 
 ## 2. Dados da Comunidade / Instituição Parceira
 
 | Campo | Informação |
 | ------- | ----------- |
-| Nome da instituição | |
-| Endereço | |
-| Nome do responsável | |
+| Nome da instituição | Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra |
+| Endereço | R. Mario Xandó de Oliveira, 2 - São Geraldo, Poços de Caldas - MG, 37701-335 |
+| Nome do responsável | TIRAR DUVIDA COM O PROFESSOR |
 | Cargo/Função | |
 | Telefone ou e-mail da instituição | |
 
