@@ -16,7 +16,7 @@
 | Campo | Informação |
 | ------- | ----------- |
 | Nome do Grupo | Grupo 1 |
-| Integrantes | Danthe Belo de Souza Barros, Laura Assis Monteiro, Thiago Baruffaldi de Carvalho |
+| Integrantes | Danthe Belo de Souza Barros, Isabela Katelyn Vilas Boas, Laura Assis Monteiro, Thiago Baruffaldi de Carvalho |
 | E-mail de contato | thiagobaruffaldi42@gmail.com |
 | Telefone de contato | 55 35 99721-0906 |
 
