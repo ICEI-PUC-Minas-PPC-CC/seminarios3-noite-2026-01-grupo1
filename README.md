@@ -11,7 +11,7 @@
 | Campo | Informação |
 | ------- | ----------- |
 | **Nome do Grupo** | Grupo 1 |
-| **Integrantes** | Danthe Belo, Laura Assis Monteiro, Thiago Baruffaldi de Carvalho |
+| **Integrantes** | Danthe Belo de Souza Barros, Isabela Katelyn Vilas Boas, Laura Assis Monteiro, Luis Otavio Delapieri Meneghin, Thiago Baruffaldi de Carvalho |
 | **E-mail de contato** | thiagobaruffaldi42@gmail.com |
 | **Comunidade parceira** | Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra |
 
