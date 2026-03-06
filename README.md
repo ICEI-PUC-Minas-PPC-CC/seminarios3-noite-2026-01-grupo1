@@ -19,7 +19,7 @@
 
 ## 🎯 Software a Ser Desenvolvido
 
-Desenvolvimento web de um glossário de Libras.
+Desenvolvimento web de um jogo com acessibilidade para usuários com algum nível de deficiência auditiva, trabalhando Valores (morais, éticos).
 
 ---
 
