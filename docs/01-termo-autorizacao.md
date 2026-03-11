@@ -7,7 +7,7 @@
 - [ ] Enviado ao professor
 - [ ] Aprovado  
 
-> **Versão do termo .docx:** [baixar na atividade do Canvas]
+> **Versão do termo .docx:** [S3_termo_autorizacao.docx](https://github.com/user-attachments/files/25920489/S3_termo_autorizacao.docx)
 
 ---
 
@@ -45,7 +45,7 @@
 
 ### Breve descrição da aplicação e sua finalidade
 
-Jogo de navegador baseado em decisões e na relação ação-consequência delas, tematizado em uma cidade da qual o jogador é responsável por. Todas as decisões seguem a proposta da instituição a ser trabalhada no ano de 2026: Valores, assim, decisões que vão de acordo com valores morais e éticos serão recompensadas, fazendo a cidade crescer e melhorar. Dessa forma, o jogo irá propor a reflexão interna do jogador e porfim ensinar o significado de diversas palavras relacionadas ao tema, como Paciência, Respeito, Gentileza, entre outras; tanto em LIBRAS quanto na língua portuguesa.
+Jogo de navegador baseado em decisões e na relação ação-consequência delas, tematizado em uma cidade pela qual o jogador é responsável. Todas as decisões seguem a proposta da instituição a ser trabalhada no ano de 2026: Valores; assim, decisões que vão de acordo com valores morais e éticos serão recompensadas, fazendo a cidade crescer e melhorar. Dessa forma, o jogo irá propor a reflexão interna do jogador e, por fim, ensinar o significado de diversas palavras relacionadas ao tema, como Paciência, Respeito, Gentileza, entre outras; tanto em LIBRAS quanto na língua portuguesa.
 
 ## 4. Levantamento de Demandas da Comunidade
 
