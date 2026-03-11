@@ -54,6 +54,7 @@ As demandas foram levantadas a partir de uma reunião online no Microsoft Teams,
 ### Registro de contatos com a comunidade
 
 | Data | Forma de contato | Resumo do que foi tratado |
+| ------- | ----------- | ----------------- |
 | 06/03/2026 | Microsoft Teams | Demandas iniciais e discussão de ideias para o projeto.|
 | | | |
 | | | |
