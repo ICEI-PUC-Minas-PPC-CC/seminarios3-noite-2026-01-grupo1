@@ -7,7 +7,7 @@
 - [ ] Enviado ao professor
 - [ ] Aprovado  
 
-> **Versão do termo .docx:** [S3_termo_autorizacao.docx](https://github.com/user-attachments/files/25920489/S3_termo_autorizacao.docx)
+> **Versão do termo .docx:** [S3_termo_autorizacao.docx](https://github.com/user-attachments/files/25920528/S3_termo_autorizacao.docx)
 
 ---
 
@@ -40,7 +40,7 @@
 | Público-alvo | Estudantes do Tarso de Coimbra |
 | Nº estimado de usuários | 40 usuários (número de alunos da escola) |
 | Faixa etária do público | Pré-adolescentes até adultos com mais de 50 anos de idade |
-| Tecnologias previstas | XXXXXXXXXX |
+| Tecnologias previstas | React |
 | Hospedagem prevista | Github Pages |
 
 ### Breve descrição da aplicação e sua finalidade
