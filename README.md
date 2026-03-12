@@ -19,7 +19,7 @@
 
 ## 🎯 Software a Ser Desenvolvido
 
-Desenvolvimento web de um jogo com acessibilidade para usuários com algum nível de deficiência auditiva, trabalhando Valores (morais, éticos).
+Desenvolvimento em React de um jogo sobre Valores, com acessibilidade para usuários com qualquer nível de deficiência auditiva, tendo como público-alvo os alunos da escola Tarso de Coimbra.
 
 ---
 
