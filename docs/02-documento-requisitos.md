@@ -1,23 +1,23 @@
 # 02 — Documento de Requisitos do Software
 
-> **Grupo:** *(preencher)*  
-> **Aplicação:** *(preencher)*  
-> **Comunidade:** *(preencher)*
+> **Grupo:** Grupo 1  
+> **Aplicação:** Cidade dos Valores  
+> **Comunidade:** Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra
 
 ---
 
 ## 1. Visão Geral
 
-(Descreva em poucas frases o que é a aplicação, para quem ela é destinada e qual problema ela resolve.)
+A aplicação é um jogo de navegador baseado em decisões, no qual o jogador administra uma cidade e aprende sobre valores como respeito, paciência e gentileza por meio das consequências de suas escolhas. Ela é destinada principalmente a estudantes do Tarso de Coimbra e ao público jovem em contexto educacional. O projeto busca promover a reflexão ética e social, além de contribuir para a inclusão ao ensinar conceitos também em LIBRAS.
 
 ## 2. Público-Alvo
 
 | Campo | Informação |
 | ------- | ----------- |
-| Perfil dos usuários | |
-| Faixa etária | |
-| Necessidades de acessibilidade | |
-| Nível de familiaridade com tecnologia | |
+| Perfil dos usuários | Estudantes, Membros do Centro Educacional |
+| Faixa etária | 12 anos ou mais |
+| Necessidades de acessibilidade | Deficiência auditiva/ Surdez |
+| Nível de familiaridade com tecnologia | Pouca |
 
 > **Lembrete (Tarso de Coimbra):** Os usuários podem ter deficiência auditiva/surdez. A interface deve ser **visual, intuitiva e de baixa complexidade**. Priorize elementos visuais (imagens, ícones, cores) sobre texto extenso.
 
@@ -55,13 +55,15 @@
 
 | Componente | Tecnologia |
 | ----------- | ----------- |
-| Front-end | |
-| Back-end (se houver) | |
+| Front-end | Html, React |
+| Back-end (se houver) | JavaScript |
 | Banco de dados (se houver) | |
-| Hospedagem | |
+| Hospedagem | Github Pages|
 | Outras ferramentas | |
 
 ## 7. Protótipo / Wireframes
+
+![WhatsApp Image 2026-03-17 at 14 39 16](https://github.com/user-attachments/assets/a57cdc80-4e65-4434-889a-df76f4d63556)
 
 (Inclua esboços das telas principais ou links para protótipos — mesmo rascunhos simples em papel são válidos. Salvem imagens dos wireframes em `evidencias/prints/`.)
 
