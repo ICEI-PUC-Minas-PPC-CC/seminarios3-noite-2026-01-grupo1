@@ -62,7 +62,7 @@ A aplicação é um jogo de navegador baseado em decisões, no qual o jogador ad
 | Outras ferramentas | |
 
 ## 7. Protótipo / Wireframes
-
+Arte Conceitual do funcionamento/design geral do jogo
 ![WhatsApp Image 2026-03-17 at 14 39 16](https://github.com/user-attachments/assets/a57cdc80-4e65-4434-889a-df76f4d63556)
 
 (Inclua esboços das telas principais ou links para protótipos — mesmo rascunhos simples em papel são válidos. Salvem imagens dos wireframes em `evidencias/prints/`.)
