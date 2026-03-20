@@ -1,7 +1,7 @@
 # 03 — Plano e Cronograma de Desenvolvimento
 
-> **Grupo:** *(preencher)*  
-> **Aplicação:** *(preencher)*
+> **Grupo:** Grupo 1  
+> **Aplicação:** Cidade dos Valores
 
 ---
 
