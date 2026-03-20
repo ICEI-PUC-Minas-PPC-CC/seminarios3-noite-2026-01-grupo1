@@ -25,9 +25,9 @@ A aplicação é um jogo de navegador baseado em decisões, no qual o jogador ad
 
 | ID | Requisito | Prioridade | Origem da demanda |
 | ---- | ---------- | :----------: | ------------------ |
-| RF01 | Deve ser interativa com alta responsividade (respostas rápidas e claras para as ações do jogador) | Alta | |
-| RF02 | A aplicação deve armazenar o progresso do jogador | Alta |  |
-| RF03 | A interação do jogador deve poder ser feita através apenas do mouse | Alta | |
+| RF01 | Deve ser interativa com alta responsividade (respostas rápidas e claras para as ações do jogador) | Alta | 06/03/2026 |
+| RF02 | A aplicação deve armazenar o progresso do jogador | Alta | 06/03/2026 |
+| RF03 | A interação do jogador deve poder ser feita através apenas do mouse | Alta | 06/03/2026 |
 | RF04 | | | |
 | RF05 | | | |
 
