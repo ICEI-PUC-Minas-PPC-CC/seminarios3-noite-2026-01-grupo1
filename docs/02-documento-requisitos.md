@@ -25,9 +25,9 @@ A aplicação é um jogo de navegador baseado em decisões, no qual o jogador ad
 
 | ID | Requisito | Prioridade | Origem da demanda |
 | ---- | ---------- | :----------: | ------------------ |
-| RF01 | | *(Alta/Média/Baixa)* | *(Reunião com a comunidade em DD/MM)* |
-| RF02 | | | |
-| RF03 | | | |
+| RF01 | Deve ser interativa com alta responsividade (respostas rápidas e claras para as ações do jogador) | Alta | |
+| RF02 | A aplicação deve armazenar o progresso do jogador | Alta |  |
+| RF03 | A interação do jogador deve poder ser feita através apenas do mouse | Alta | |
 | RF04 | | | |
 | RF05 | | | |
 
@@ -37,18 +37,18 @@ A aplicação é um jogo de navegador baseado em decisões, no qual o jogador ad
 | ---- | ---------- | ----------- |
 | RNF01 | A aplicação deve ser acessível via navegador web | Acessibilidade |
 | RNF02 | A interface deve ser simples e intuitiva | Usabilidade |
-| RNF03 | A aplicação deve funcionar em dispositivos móveis | Compatibilidade |
-| RNF04 | | |
-| RNF05 | | |
+| RNF03 | A aplicação não deve utilizar muitos textos | Acessibilidade |
+| RNF04 | Responsividade em ações através de cores, luzes, animações | Acessibilidade/Usabilidade|
+| RNF05 | O jogo deve ser divertido e educativo | Usabilidade |
 
 ## 5. Requisitos de Acessibilidade
 
-- [ ] Interface predominantemente visual (ícones, cores, imagens)
-- [ ] Textos curtos e objetivos
-- [ ] Botões grandes e identificáveis
-- [ ] Contraste adequado de cores
-- [ ] Compatível com Libras (se aplicável: vídeos, sinais, glossário)
-- [ ] Sem dependência de áudio para funcionalidades essenciais
+- [x] Interface predominantemente visual (ícones, cores, imagens)
+- [x] Textos curtos e objetivos
+- [x] Botões grandes e identificáveis
+- [x] Contraste adequado de cores
+- [x] Compatível com Libras (se aplicável: vídeos, sinais, glossário)
+- [x] Sem dependência de áudio para funcionalidades essenciais
 - [ ] Outro: *(especificar)*
 
 ## 6. Tecnologias Escolhidas
@@ -62,20 +62,17 @@ A aplicação é um jogo de navegador baseado em decisões, no qual o jogador ad
 | Outras ferramentas | |
 
 ## 7. Protótipo / Wireframes
-Arte Conceitual do funcionamento/design geral do jogo
-![WhatsApp Image 2026-03-17 at 14 39 16](https://github.com/user-attachments/assets/a57cdc80-4e65-4434-889a-df76f4d63556)
-
-(Inclua esboços das telas principais ou links para protótipos — mesmo rascunhos simples em papel são válidos. Salvem imagens dos wireframes em `evidencias/prints/`.)
+Link para o protótipo no FIGMA: https://www.figma.com/site/S3FYxBOoaMfQRjlPZhATwd/Cidade-dos-Valores?node-id=0-1&t=6KiUvBa9pWZAU9w9-1
 
 ## 8. Escopo Mínimo Viável (MVP)
 
 (Quais funcionalidades compõem a versão mínima que pode ser entregue à comunidade?)
 
-- [ ] *(Funcionalidade 1)*
-- [ ] *(Funcionalidade 2)*
-- [ ] *(Funcionalidade 3)*
+- [ ] Aplicação Web interativa, retratando Valores.
+- [ ] Acessibilidade para Deficiência Auditiva/Surdez.
+- [ ] Exemplos em Libras dentro da aplicação.
 
 ## 9. Funcionalidades Desejáveis (se houver tempo)
 
-- *(Funcionalidade extra 1)*
-- *(Funcionalidade extra 2)*
+- Sistema de pontuação do jogador
+- Armazenamento de dados na nuvem
