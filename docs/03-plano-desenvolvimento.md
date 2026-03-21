@@ -18,10 +18,10 @@
 
 | Semana | Período (dd/MM à dd/MM) | Atividade planejada | Responsável | Status |
 | :------: | --------- | -------------------- | -----------: | :------: |
-| 1 | 18/02 à 25/02 | Formação do grupo | Todos | iniciado |
-| 2 | | Contato com comunidade e Levantamento de demandas | | não iniciado |
-| 3 | | Definição de requisitos | | não iniciado |
-| 4 | | Prototipação / wireframes | | não iniciado |
+| 1 | 18/02 à 25/02 | Formação do grupo | Todos | feito |
+| 2 | 01/03 à 07/03 | Contato com comunidade e Levantamento de demandas | Thiago | feito |
+| 3 | 15/03 à 21/03 | Definição de requisitos | Todos | feito |
+| 4 | 15/03 à 21/03 | Prototipação / wireframes | Thiago, Dante e Luis | feito |
 | 5 | | Desenvolvimento — Sprint 1 | | não iniciado |
 | 6 | | Desenvolvimento — Sprint 1 | | não iniciado |
 | 7 | | Validação com a comunidade | | não iniciado |
