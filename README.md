@@ -17,10 +17,9 @@
 
 ---
 
-## 🎯 Software a Ser Desenvolvido
+## Projeto Gamificação de Valores: Experiência Acessível em React
 
-Desenvolvimento em React de um jogo sobre Valores, com acessibilidade para usuários com qualquer nível de deficiência auditiva, tendo como público-alvo os alunos da escola Tarso de Coimbra.
-
+Desenvolvimento de uma aplicação web interativa utilizando a biblioteca React, voltada ao ensino de valores éticos e cidadania para os alunos da Escola Tarso de Coimbra. O projeto prioriza a acessibilidade universal para a comunidade surda e com deficiência auditiva, implementando interfaces visuais intuitivas, suporte a Libras (Língua Brasileira de Sinais) e feedbacks táteis/visuais que garantem autonomia total ao usuário, independentemente do seu nível de audição.
 ---
 
 ## 📁 Estrutura do Repositório
