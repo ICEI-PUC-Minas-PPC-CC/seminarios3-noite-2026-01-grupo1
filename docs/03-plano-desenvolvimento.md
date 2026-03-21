@@ -1,6 +1,6 @@
 # 03 — Plano e Cronograma de Desenvolvimento
 
-> **Grupo:** Danthe, Isabela, Laura, Luis, Thiago 
+> **Grupo:** Danthe, Isabela, Laura, Luis, Thiago  
 > **Aplicação:** Cidade dos Valores
 
 ---
@@ -52,23 +52,23 @@
 
 ### Ambiente de desenvolvimento
 
-O projeto será desenvolvido no Visual Studio Code, com controle de versão utilizando Git e repositório no GitHub.
+O projeto será desenvolvido no Visual Studio Code, com controle de versão utilizando Git e repositório no GitHub.  
 A organização será feita com uma branch principal (main) e branches secundárias para funcionalidades, integradas via pull requests. Issues serão utilizadas para gerenciar tarefas e bugs.
 
 ### Estratégia de testes
 
-**Testes funcionais**: validar mecânicas básicas (perguntas, pontuação, menus)
-**Testes de integração**: verificar se os sistemas do jogo funcionam juntos
-**Compatibilidade**: testar em diferentes navegadores e desktops
-**Usabilidade**: coletar feedback de jogadores reais
-**Testes regressivos**: garantir que mudanças não quebrem o que já funciona
-**Organização**: usar checklists e ferramentas para registrar e acompanhar bugs
+**Testes funcionais**: validar mecânicas básicas (perguntas, pontuação, menus)  
+**Testes de integração**: verificar se os sistemas do jogo funcionam juntos  
+**Compatibilidade**: testar em diferentes navegadores e desktops  
+**Usabilidade**: coletar feedback de jogadores reais  
+**Testes regressivos**: garantir que mudanças não quebrem o que já funciona  
+**Organização**: usar checklists e ferramentas para registrar e acompanhar bugs  
 
 ### Estratégia de deploy
 
-Fase Inicial: Utilizar o GitHub Pages para realizar o deploy do jogo de forma rápida, garantindo uma versão funcional e acessível para testes e entregas iniciais.
-Fase de Otimização: Migrar o front-end para plataformas como Vercel ou Netlify, visando melhorar desempenho, automatizar deploys e aproveitar CDN.
-Fase de Expansão: Caso o projeto evolua, implementar um backend com Node.js e integrar serviços como Firebase ou Supabase para suportar funcionalidades como autenticação, ranking e persistência de dados.
+Fase Inicial: Utilizar o GitHub Pages para realizar o deploy do jogo de forma rápida, garantindo uma versão funcional e acessível para testes e entregas iniciais.  
+Fase de Otimização: Migrar o front-end para plataformas como Vercel ou Netlify, visando melhorar desempenho, automatizar deploys e aproveitar CDN.  
+Fase de Expansão: Caso o projeto evolua, implementar um backend com Node.js e integrar serviços como Firebase ou Supabase para suportar funcionalidades como autenticação, ranking e persistência de dados.  
 
 ## 5. Riscos e Mitigações
 
