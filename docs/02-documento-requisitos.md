@@ -62,7 +62,7 @@ A aplicação é um jogo de navegador baseado em decisões, no qual o jogador ad
 | Outras ferramentas | |
 
 ## 7. Protótipo / Wireframes
-Link para o protótipo no FIGMA: https://www.figma.com/site/S3FYxBOoaMfQRjlPZhATwd/Cidade-dos-Valores?node-id=0-1&t=6KiUvBa9pWZAU9w9-1
+Link para o protótipo no FIGMA: [https://www.figma.com/site/S3FYxBOoaMfQRjlPZhATwd/Cidade-dos-Valores?node-id=0-1&t=6KiUvBa9pWZAU9w9-1](https://www.figma.com/design/7tpByZal4Jt8uEVH07c7CM/Cidade-dos-Valores?node-id=0-1&t=CvdSTD1YKlGOukwY-1)
 
 ## 8. Escopo Mínimo Viável (MVP)
 
