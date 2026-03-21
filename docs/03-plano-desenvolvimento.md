@@ -1,6 +1,6 @@
 # 03 — Plano e Cronograma de Desenvolvimento
 
-> **Grupo:** Grupo 1  
+> **Grupo:** Danthe, Isabela, Laura, Luis, Thiago
 > **Aplicação:** Cidade dos Valores
 
 ---
@@ -9,10 +9,11 @@
 
 | Integrante | Responsabilidades principais |
 | ----------- | ------------------------------ |
-| | |
-| | |
-| | |
-| | |
+| Thiago | Documentação e Comunicação com a Comunidade |
+| Danthe | Desenvolvimento |
+| Laura | Desenvolvimento |
+| Luis | Arte e Desenvolvimento |
+| Isabela | Arte e Documentação |
 
 ## 2. Cronograma de Desenvolvimento
 
@@ -21,15 +22,15 @@
 | 1 | 18/02 à 25/02 | Formação do grupo | Todos | feito |
 | 2 | 01/03 à 07/03 | Contato com comunidade e Levantamento de demandas | Thiago | feito |
 | 3 | 15/03 à 21/03 | Definição de requisitos | Todos | feito |
-| 4 | 15/03 à 21/03 | Prototipação / wireframes | Thiago, Dante e Luis | feito |
-| 5 | | Desenvolvimento — Sprint 1 | | não iniciado |
-| 6 | | Desenvolvimento — Sprint 1 | | não iniciado |
-| 7 | | Validação com a comunidade | | não iniciado |
-| 8 | | Desenvolvimento — Sprint 2 | | não iniciado |
-| 9 | | Desenvolvimento — Sprint 2 | | não iniciado |
-| 10 | | Testes e ajustes | | não iniciado |
-| 11 | | Deploy / hospedagem | | não iniciado |
-| 12 | | Validação final com a comunidade | | não iniciado |
+| 4 | 15/03 à 21/03 | Prototipação / wireframes | Thiago, Danthe e Luis | feito |
+| 5 | | Desenvolvimento — Sprint 1 | Danthe e Laura | não iniciado |
+| 6 | | Desenvolvimento — Sprint 1 | Luis e Isabela | não iniciado |
+| 7 | | Validação com a comunidade | Thiago | não iniciado |
+| 8 | | Desenvolvimento — Sprint 2 | Danthe e Laura | não iniciado |
+| 9 | | Desenvolvimento — Sprint 2 | Luis e Isabela | não iniciado |
+| 10 | | Testes e ajustes | Thiago, Danthe e Laura | não iniciado |
+| 11 | | Deploy / hospedagem | Danthe | não iniciado |
+| 12 | | Validação final com a comunidade | Thiago | não iniciado |
 | 13 | | **Entrega presencial** | Todos | não iniciado |
 | 14 | | Preenchimento dos relatórios APC | Todos | não iniciado |
 
@@ -39,13 +40,13 @@
 
 | Marco | Data prevista | Critério de conclusão |
 | ------- | :------------: | ---------------------- |
-| Demandas levantadas | | Registro de contato com a comunidade |
-| Requisitos definidos | | Documento `02-documento-requisitos.md` preenchido |
-| Protótipo aprovado | | Wireframes validados com a comunidade |
-| MVP funcional | | Funcionalidades mínimas operacionais |
-| Deploy realizado | | Aplicação acessível pela Internet |
-| Entrega presencial | | Software apresentado à comunidade |
-| Relatórios APC | | Relatório e autoavaliação preenchidos |
+| Demandas levantadas | 06/03 | Registro de contato com a comunidade |
+| Requisitos definidos | 20/03 | Documento `02-documento-requisitos.md` preenchido |
+| Protótipo aprovado | 30/03 | Wireframes validados com a comunidade |
+| MVP funcional | 10/04 | Funcionalidades mínimas operacionais |
+| Deploy realizado | 20/04 | Aplicação acessível pela Internet |
+| Entrega presencial | 06/6 | Software apresentado à comunidade |
+| Relatórios APC | 13/06 | Relatório e autoavaliação preenchidos |
 
 ## 4. Estratégia de Desenvolvimento
 
@@ -55,25 +56,32 @@
 
 ### Estratégia de testes
 
-(Como o grupo vai testar a aplicação antes da entrega?)
+**Testes funcionais**: validar mecânicas básicas (perguntas, pontuação, menus)
+**Testes de integração**: verificar se os sistemas do jogo funcionam juntos
+**Compatibilidade**: testar em diferentes navegadores e desktops
+**Usabilidade**: coletar feedback de jogadores reais
+**Testes regressivos**: garantir que mudanças não quebrem o que já funciona
+**Organização**: usar checklists e ferramentas para registrar e acompanhar bugs
 
 ### Estratégia de deploy
 
-(Onde e como a aplicação será hospedada?)
+Fase Inicial: Utilizar o GitHub Pages para realizar o deploy do jogo de forma rápida, garantindo uma versão funcional e acessível para testes e entregas iniciais.
+Fase de Otimização: Migrar o front-end para plataformas como Vercel ou Netlify, visando melhorar desempenho, automatizar deploys e aproveitar CDN.
+Fase de Expansão: Caso o projeto evolua, implementar um backend com Node.js e integrar serviços como Firebase ou Supabase para suportar funcionalidades como autenticação, ranking e persistência de dados.
 
 ## 5. Riscos e Mitigações
 
 | Risco | Probabilidade | Impacto | Mitigação |
 | ------- | :------------: | :-------: | ---------- |
-| Atraso no cronograma | | | |
-| Dificuldade técnica inesperada | | | |
-| Comunidade indisponível para reuniões | | | |
-| Problemas de infraestrutura no dia da entrega | | | |
+| Atraso no cronograma | Baixa | Alto | Priorizar o essencial e definir entregas intermediárias. |
+| Dificuldade técnica inesperada | Alta | Baixo | Dividir o problema e buscar soluções alternativas rapidamente. |
+| Comunidade indisponível para reuniões | Média | Baixo | Usar comunicação assíncrona para obter feedback.|
+| Problemas de infraestrutura no dia da entrega | Médio | Moderado | Ter planos de backup e testar tudo antes da entrega. |
 
 ## 6. Comunicação do Grupo
 
 | Canal | Finalidade |
 | ------- | ----------- |
-| *(WhatsApp / Discord / Teams)* | Comunicação diária |
-| *(GitHub Issues / Projects)* | Controle de tarefas |
-| *(Reuniões semanais)* | Alinhamento do grupo |
+| Whatsapp | Comunicação diária |
+| GitHub Issues | Controle de tarefas |
+| Faculdade | Alinhamento do grupo |
