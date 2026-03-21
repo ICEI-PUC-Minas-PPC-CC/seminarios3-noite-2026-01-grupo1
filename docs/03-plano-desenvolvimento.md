@@ -1,6 +1,7 @@
 # 03 — Plano e Cronograma de Desenvolvimento
 
 > **Grupo:** Danthe, Isabela, Laura, Luis, Thiago
+
 > **Aplicação:** Cidade dos Valores
 
 ---
