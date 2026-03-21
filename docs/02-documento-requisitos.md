@@ -1,6 +1,6 @@
 # 02 — Documento de Requisitos do Software
 
-> **Grupo:** Grupo 1  
+> **Grupo:** Danthe, Isabela, Laura, Luis, Thiago  
 > **Aplicação:** Cidade dos Valores  
 > **Comunidade:** Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra
 
