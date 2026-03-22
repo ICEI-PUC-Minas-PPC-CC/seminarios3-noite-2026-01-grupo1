@@ -57,7 +57,7 @@ A aplicação é um jogo de navegador baseado em decisões, no qual o jogador ad
 | ----------- | ----------- |
 | Front-end | Html, React |
 | Back-end (se houver) | JavaScript |
-| Banco de dados (se houver) | |
+| Banco de dados (se houver) | | postgres/ sql
 | Hospedagem | Github Pages|
 | Outras ferramentas | |
 
@@ -76,3 +76,4 @@ Link para o protótipo no FIGMA: [https://www.figma.com/site/S3FYxBOoaMfQRjlPZhA
 
 - Sistema de pontuação do jogador
 - Armazenamento de dados na nuvem
+- localstorage de segundo plano
