@@ -61,6 +61,7 @@ O grupo tem liberdade de escolha. Sugestões do professor:
 
 - **Front-end:** HTML, CSS, JavaScript, React
 - **Back-end (opcional):** Node.js, Python (Flask/Streamlit), etc.
+- **Dados:** postgres, SQL
 - **Hospedagem gratuita:** Streamlit App, Vercel, Netlify, GitHub Pages, Railway
 
 ---
@@ -73,3 +74,4 @@ O grupo tem liberdade de escolha. Sugestões do professor:
 - Mantenham o **diário de bordo atualizado** ao longo do semestre.
 - Idealmente, o software deve ser **hospedado em nuvem** para acesso pela Internet.
 - Sem o desenvolvimento do software, entrega presencial e preenchimento dos relatórios, o grupo **não pode ser aprovado**.
+- Manter os commits de forma organizada , fazendo PR a cada novo commit em uma branch especifica com o objetivo de uma melhor documentação e visualição do que foi feito.
