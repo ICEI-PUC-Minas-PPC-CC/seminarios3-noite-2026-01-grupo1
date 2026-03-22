@@ -19,7 +19,7 @@
 | Data | 06/03 |
 | Forma de contato | Reunião no Microsoft Teams |
 | Participantes do grupo | Thiago |
-| Participantes da comunidade |  |
+| Participantes da comunidade |  Fabiana Scassiotti Fernandes Solia |
 | Objetivo do contato | Demandas Iniciais |
 
 **Resumo do que foi tratado:**
@@ -27,7 +27,7 @@ OBJETIVOS DO PROJETO: estimulação na comunicação LIBRAS, favorecer a intera�
 +Ideias de projetos pela coordenadora
 
 **Encaminhamentos:**
-(O que ficou combinado para a próxima interação?)
+Protótipo do projeto entregue.
 
 ---
 
