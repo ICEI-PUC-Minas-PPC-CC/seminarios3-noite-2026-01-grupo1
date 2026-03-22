@@ -1,7 +1,7 @@
 # 06 — Registro de Contatos com a Comunidade
 
-> **Grupo:** *(preencher)*  
-> **Comunidade:** *(preencher)*
+> **Grupo:** Danthe Belo de Souza Barros, Isabela Katelyn Vilas Boas, Laura Assis Monteiro, Luis Otavio Delapieri Meneghin, Thiago Baruffaldi de Carvalho    
+> **Comunidade:** Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra  
 
 ---
 
@@ -16,14 +16,15 @@
 
 | Campo | Informação |
 | ------- | ----------- |
-| Data | |
-| Forma de contato | *(Presencial / Online / E-mail / Telefone / WhatsApp)* |
-| Participantes do grupo | |
-| Participantes da comunidade | |
-| Objetivo do contato | |
+| Data | 06/03 |
+| Forma de contato | Reunião no Microsoft Teams |
+| Participantes do grupo | Thiago |
+| Participantes da comunidade |  |
+| Objetivo do contato | Demandas Iniciais |
 
 **Resumo do que foi tratado:**
-(Descrever o que foi discutido, decisões tomadas, demandas identificadas.)
+OBJETIVOS DO PROJETO: estimulação na comunicação LIBRAS, favorecer a interação social, propiciar descontração para a criança surda e para a família, tecnologia como ferramenta para a inclusão social;  
++Ideias de projetos pela coordenadora
 
 **Encaminhamentos:**
 (O que ficou combinado para a próxima interação?)
