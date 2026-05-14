@@ -1,7 +1,7 @@
 # 05 — Diário de Bordo do Grupo
 
-> **Grupo:** Danthe, Isabela, Laura, Luis, Thiago 
-> **Aplicação:** Cidade dos Valores 
+> **Grupo:** Danthe, Isabela, Laura, Luis, Thiago   
+> **Aplicação:** Cidade dos Valores   
 
 ---
 
