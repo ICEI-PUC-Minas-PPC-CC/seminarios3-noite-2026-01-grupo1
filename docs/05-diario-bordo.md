@@ -1,7 +1,7 @@
 # 05 — Diário de Bordo do Grupo
 
-> **Grupo:** *(preencher)*  
-> **Aplicação:** *(preencher)*
+> **Grupo:** Danthe, Isabela, Laura, Luis, Thiago 
+> **Aplicação:** Cidade dos Valores 
 
 ---
 
@@ -51,7 +51,39 @@
 
 ---
 
-*(Copie o bloco acima para cada semana de atividade ao longo do semestre.)*
+### Semana 04 — ___/___/___ a ___/___/___
+
+**O que foi feito:**
+
+**Quem participou:**
+
+**Decisões técnicas tomadas:**
+
+**Próximos passos:**
+
+---
+
+### Semana 05 — ___/___/___ a ___/___/___
+
+**O que foi feito:**
+
+**Quem participou:**
+
+**Decisões técnicas tomadas:**
+
+**Próximos passos:**
+
+---
+
+### Semana 06 — ___/___/___ a ___/___/___
+
+**O que foi feito:**
+
+**Quem participou:**
+
+**Decisões técnicas tomadas:**
+
+**Próximos passos:**
 
 ---
 
