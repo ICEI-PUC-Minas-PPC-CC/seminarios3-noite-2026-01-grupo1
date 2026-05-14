@@ -87,6 +87,66 @@
 
 ---
 
+### Semana 07 — ___/___/___ a ___/___/___
+
+**O que foi feito:**
+
+**Quem participou:**
+
+**Decisões técnicas tomadas:**
+
+**Próximos passos:**
+
+---
+
+### Semana 08 — ___/___/___ a ___/___/___
+
+**O que foi feito:**
+
+**Quem participou:**
+
+**Decisões técnicas tomadas:**
+
+**Próximos passos:**
+
+---
+
+### Semana 09 — ___/___/___ a ___/___/___
+
+**O que foi feito:**
+
+**Quem participou:**
+
+**Decisões técnicas tomadas:**
+
+**Próximos passos:**
+
+---
+
+### Semana 10 — ___/___/___ a ___/___/___
+
+**O que foi feito:**
+
+**Quem participou:**
+
+**Decisões técnicas tomadas:**
+
+**Próximos passos:**
+
+---
+
+### Semana 11 — ___/___/___ a ___/___/___
+
+**O que foi feito:**
+
+**Quem participou:**
+
+**Decisões técnicas tomadas:**
+
+**Próximos passos:**
+
+---
+
 ## Registro da Entrega Presencial
 
 **Data:** ___/___/___  
