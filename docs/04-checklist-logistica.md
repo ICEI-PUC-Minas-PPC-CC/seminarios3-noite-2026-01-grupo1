@@ -1,7 +1,7 @@
 # 04- — Checklist de Preparação e Logística
 
-> **Aplicação:** Cidade dos Valores 
-> **Data prevista para entrega:** 24/05 - 30/05 
+> **Aplicação:** Cidade dos Valores
+> **Data prevista para entrega:** 24/05 - 30/05
 > **Local:** PUC Poços de Caldas 
 
 ---
