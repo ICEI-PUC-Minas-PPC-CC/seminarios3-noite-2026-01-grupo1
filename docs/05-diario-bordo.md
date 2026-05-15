@@ -38,7 +38,7 @@ Entramos em contato com a comunidade, mais especificamente com Fabiana Scassioti
 
 **Quem participou:**
 
-Danthe, Isabela, Laura, Luis, Thiago
+Thiago
 
 **Decisões técnicas tomadas:**
 
@@ -78,7 +78,7 @@ Foram criados protótipos e wireframes iniciais com base nos requisitos definido
 
 **Quem participou:**
 
-Danthe, Isabela, Laura, Luis, Thiago
+Danthe, Luis, Thiago
 
 **Decisões técnicas tomadas:**
 
@@ -94,12 +94,19 @@ Na próxima semana, será iniciado o desenvolvimento do projeto com base nas def
 
 **O que foi feito:**
 
+Foi iniciado o desenvolvimento do projeto, implementando as funcionalidades planejadas com base nos requisitos levantados e nos protótipos elaborados.
+
 **Quem participou:**
-Danthe, Isabela, Laura, Luis, Thiago
+
+Danthe, Laura
 
 **Decisões técnicas tomadas:**
 
+Foi decidido desenvolver o projeto com base nos requisitos, protótipos e definições estabelecidas anteriormente, priorizando uma estrutura organizada e de fácil manutenção. 
+
 **Próximos passos:**
+
+
 
 ---
 
