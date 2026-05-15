@@ -1,22 +1,18 @@
-import imgJoao from '../../assets/characters/joao.png';
-import imgMaria from '../../assets/characters/maria.png';
-
 export default function DialogueStep({ step, onNext, character, playerName }) {
   const text = step.textTemplate
     ? step.textTemplate.replace('{playerName}', playerName || 'Jogador')
     : step.text;
 
-  const charImg = character === 'maria' ? imgMaria : imgJoao;
-
   return (
     <div className="animate-in">
       <div className="dialogue-box">
         {step.character && (
-          <img src={charImg} alt="Avatar" className="dialogue-avatar" style={{
-            objectFit: 'cover',
-            background: 'var(--bg-card)',
-            border: '2px solid var(--primary-light)'
-          }} />
+          <div className="dialogue-avatar" style={{
+            background: 'linear-gradient(135deg, var(--primary), var(--secondary))',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem',
+          }}>
+            {character === 'maria' ? '👩' : '👦'}
+          </div>
         )}
         <div style={{ flex: 1 }}>
           <p className="dialogue-text">{text}</p>

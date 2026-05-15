@@ -3,25 +3,9 @@ import { useGame } from '../contexts/GameContext';
 import { PHASES } from '../data/mockData';
 import '../styles/map.css';
 
-import imgEscola from '../assets/images/escola.png';
-import imgJoaoPinheiro from '../assets/images/joao-pinheiro.png';
-import imgUrca from '../assets/images/urca.png';
-import imgRelogio from '../assets/images/relogio-floral.png';
-import imgPraca from '../assets/images/praca.png';
-import imgBondinho from '../assets/images/bondinho.png';
-import imgCristo from '../assets/images/cristo.png';
-
-const PHASE_IMAGES = {
-  1: imgEscola,
-  2: imgJoaoPinheiro,
-  3: imgUrca,
-  4: imgRelogio,
-  5: imgPraca,
-  6: imgBondinho,
-};
-
 export default function CityMap({ onStartPhase }) {
-  const { highestPhase, score, character, playerName } = useGame();
+  const { currentScene, score, character, playerName } = useGame();
+  const currentPhase = currentScene;
 
   const stars = useMemo(() =>
     Array.from({ length: 30 }, (_, i) => ({
@@ -34,8 +18,8 @@ export default function CityMap({ onStartPhase }) {
   []);
 
   const getNodeStatus = (phaseId) => {
-    if (phaseId < highestPhase) return 'completed';
-    if (phaseId === highestPhase) return 'current';
+    if (phaseId < currentPhase) return 'completed';
+    if (phaseId === currentPhase) return 'current';
     return 'locked';
   };
 
@@ -58,6 +42,7 @@ export default function CityMap({ onStartPhase }) {
       <div className="map-header">
         <h1 className="gradient-text">Cidade dos Valores</h1>
         <div className="map-player-info">
+          <span className="avatar">{character === 'maria' ? '👩' : '👦'}</span>
           <span className="name">{playerName || 'Jogador'}</span>
           <span className="score">⭐ {score}</span>
         </div>
@@ -67,26 +52,17 @@ export default function CityMap({ onStartPhase }) {
         {PHASES.map((phase, index) => {
           const status = getNodeStatus(phase.id);
           const side = index % 2 === 0 ? 'left' : 'right';
-          const phaseImage = PHASE_IMAGES[phase.id];
 
           return (
             <div key={phase.id}>
               {index > 0 && (
-                <div className={`map-connector ${index + 1 < highestPhase ? 'completed' : index + 1 === highestPhase ? 'current' : 'locked'}`}
+                <div className={`map-connector ${index < currentPhase ? 'completed' : index === currentPhase - 1 ? 'current' : 'locked'}`}
                   style={{ margin: '0 auto' }} />
               )}
 
               <div className={`map-node ${status} ${side}`} onClick={() => handleNodeClick(phase.id)}>
                 <div className="map-node-circle">
-                  {phaseImage ? (
-                    <img
-                      src={phaseImage}
-                      alt={phase.name}
-                      className="map-node-img"
-                    />
-                  ) : (
-                    phase.icon
-                  )}
+                  {phase.icon}
                   {status === 'completed' && <span className="map-node-check">✓</span>}
                   {status === 'locked' && <span className="map-node-lock">🔒</span>}
                 </div>
@@ -104,10 +80,10 @@ export default function CityMap({ onStartPhase }) {
           );
         })}
 
-        <div className={`map-connector ${highestPhase > PHASES.length ? 'completed' : 'locked'}`}
+        <div className={`map-connector ${currentPhase > PHASES.length ? 'completed' : 'locked'}`}
           style={{ margin: '0 auto' }} />
-        <div className={`map-finish ${highestPhase > PHASES.length ? '' : 'locked'}`}>
-          <img src={imgCristo} alt="Cristo Redentor" className="map-finish-img" />
+        <div className={`map-finish ${currentPhase > PHASES.length ? '' : 'locked'}`}>
+          <span className="finish-icon">🏆</span>
           <p className="gradient-text" style={{ fontWeight: 700 }}>Conclusão</p>
         </div>
       </div>

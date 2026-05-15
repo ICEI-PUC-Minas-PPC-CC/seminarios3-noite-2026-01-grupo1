@@ -9,14 +9,9 @@ export default function ChoiceStep({ step, onCorrect, onWrong }) {
     setSelected(option.id);
     setShowFeedback(true);
     setTimeout(() => {
-      if (option.correct) {
-        onCorrect(step.points || 10);
-      } else {
-        onWrong();
-        setSelected(null);
-        setShowFeedback(false);
-      }
-    }, 1500);
+      if (option.correct) onCorrect(step.points || 10);
+      else onWrong();
+    }, 1800);
   };
 
   return (
@@ -30,6 +25,7 @@ export default function ChoiceStep({ step, onCorrect, onWrong }) {
           if (selected !== null) {
             if (opt.id === selected && opt.correct) className += ' correct';
             else if (opt.id === selected && !opt.correct) className += ' wrong';
+            else if (opt.correct && showFeedback) className += ' correct';
           }
           return (
             <button key={opt.id} className={className} onClick={() => handleChoice(opt)} disabled={selected !== null}>

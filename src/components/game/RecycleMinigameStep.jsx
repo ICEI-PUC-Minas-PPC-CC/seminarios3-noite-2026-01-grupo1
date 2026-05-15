@@ -10,14 +10,9 @@ export default function RecycleMinigameStep({ step, onCorrect, onWrong }) {
     setShowFeedback(true);
     const correct = bin.id === step.correctBin;
     setTimeout(() => {
-      if (correct) {
-        onCorrect(step.points || 15);
-      } else {
-        onWrong();
-        setSelected(null);
-        setShowFeedback(false);
-      }
-    }, 1500);
+      if (correct) onCorrect(step.points || 15);
+      else onWrong();
+    }, 1800);
   };
 
   return (
@@ -42,6 +37,8 @@ export default function RecycleMinigameStep({ step, onCorrect, onWrong }) {
             } else if (bin.id === selected && bin.id !== step.correctBin) {
               style.background = 'var(--error-bg)';
               style.borderColor = 'var(--error)';
+            } else if (bin.id === step.correctBin && showFeedback) {
+              style.borderColor = 'var(--success)';
             }
           }
           return (
