@@ -12,6 +12,7 @@ import {
   RecycleMinigameStep,
   FinaleStep,
 } from './game';
+import TransitionScreen from './layout/TransitionScreen';
 
 export default function SceneEngine() {
   const game = useGame();
@@ -33,10 +34,6 @@ export default function SceneEngine() {
         game.nextStep();
       } else if (currentScene + 1 < SCENES.length) {
         setTransitioning(true);
-        setTimeout(() => {
-          game.nextScene();
-          setTransitioning(false);
-        }, 1000);
       }
     }, 1500);
   }, [currentStep, currentScene, scene?.steps?.length, game]);
@@ -50,12 +47,13 @@ export default function SceneEngine() {
       game.nextStep();
     } else if (currentScene + 1 < SCENES.length) {
       setTransitioning(true);
-      setTimeout(() => {
-        game.nextScene();
-        setTransitioning(false);
-      }, 800);
     }
   }, [currentStep, currentScene, scene?.steps?.length, game]);
+
+  const handleTransitionComplete = useCallback(() => {
+    setTransitioning(false);
+    game.nextScene();
+  }, [game]);
 
   const handleCharacterSelect = useCallback((char) => {
     game.setCharacter(char);
@@ -85,12 +83,19 @@ export default function SceneEngine() {
   const sceneIcons = ['🏙️', '🏫', '🚦', '🏛️', '⏰', '🌳', '🚡'];
 
   return (
-    <div className="scene-container" style={{
-      background: bgGradients[currentScene] || bgGradients[0],
-      opacity: transitioning ? 0 : 1,
-      transition: 'opacity 0.8s var(--ease)',
-    }}>
-      <Confetti active={showConfetti} />
+    <>
+      <TransitionScreen 
+        show={transitioning}
+        fromScene={currentScene}
+        toScene={currentScene + 1}
+        onComplete={handleTransitionComplete}
+      />
+      <div className="scene-container" style={{
+        background: bgGradients[currentScene] || bgGradients[0],
+        opacity: transitioning ? 0 : 1,
+        transition: 'opacity 0.8s var(--ease)',
+      }}>
+        <Confetti active={showConfetti} />
 
       {scene.type === 'scene' && (
         <div style={{
@@ -159,5 +164,6 @@ export default function SceneEngine() {
         )}
       </div>
     </div>
+    </>
   );
 }
