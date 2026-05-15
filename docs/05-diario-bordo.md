@@ -11,8 +11,7 @@
 
 ## Registro de Atividades
 
-### Semana 01 — ___/___/___ a ___/___/___
-
+### Semana 01 — 18/02/2026 a 25/02/2026
 **O que foi feito:**
 *(Descrever as atividades realizadas nesta semana: desenvolvimento, reuniões, testes, etc.)*
 
@@ -27,7 +26,7 @@ Danthe, Isabela, Laura, Luis, Thiago
 
 ---
 
-### Semana 02 — ___/___/___ a ___/___/___
+### Semana 02 — 01/03/2026 a 07/03/2026
 
 **O que foi feito:**
 
@@ -40,7 +39,19 @@ Danthe, Isabela, Laura, Luis, Thiago
 
 ---
 
-### Semana 03 — ___/___/___ a ___/___/___
+### Semana 03 — 15/03/2026 a 21/03/2026
+**O que foi feito:**
+
+**Quem participou:**
+Danthe, Isabela, Laura, Luis, Thiago
+
+**Decisões técnicas tomadas:**
+
+**Próximos passos:**
+
+---
+
+### Semana 04 — 15/03/2026 a 21/03/2026
 
 **O que foi feito:**
 
@@ -53,20 +64,7 @@ Danthe, Isabela, Laura, Luis, Thiago
 
 ---
 
-### Semana 04 — ___/___/___ a ___/___/___
-
-**O que foi feito:**
-
-**Quem participou:**
-Danthe, Isabela, Laura, Luis, Thiago
-
-**Decisões técnicas tomadas:**
-
-**Próximos passos:**
-
----
-
-### Semana 05 — ___/___/___ a ___/___/___
+### Semana 05 — 29/03/2026 a 04/04/2026
 
 **O que foi feito:**
 
