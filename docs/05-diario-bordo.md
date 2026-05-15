@@ -106,7 +106,7 @@ Foi decidido desenvolver o projeto com base nos requisitos, protótipos e defini
 
 **Próximos passos:**
 
-
+Prosseguir com o desenvolvimento do projeto a partir das definições estabelecidas anteriormente, considerando os requisitos levantados, a modelagem realizada e o planejamento elaborado para a execução das funcionalidades previstas.
 
 ---
 
