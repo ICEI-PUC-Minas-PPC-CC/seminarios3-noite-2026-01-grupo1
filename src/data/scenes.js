@@ -65,7 +65,7 @@ const SCENES = [
       },
       {
         type: "libras_quiz",
-        text: "Qual é o sinal correto? Escolha o sinal de ESPERAR:",
+        text: "O sinal está vermelho 🔴, o que você deve fazer?",
         options: [
           { id: 0, label: "ANDAR", emoji: "🚶", correct: false },
           { id: 1, label: "ESPERAR", emoji: "✋", correct: true },
@@ -142,6 +142,22 @@ const SCENES = [
           wrong: "Tente novamente! Use POR FAVOR e OBRIGADO nos lugares certos.",
         },
         points: 20,
+      },
+      {
+        type: "libras_image_quiz",
+        text: "Agora, acerte os sinais de POR FAVOR e OBRIGADA:",
+        options: [
+          { id: 0, label: "POR FAVOR", image: "porfavor", correct: true },
+          { id: 1, label: "OBRIGADA", image: "obrigada", correct: true },
+          { id: 2, label: "DESCULPA", image: "desculpa", correct: false },
+          { id: 3, label: "BOM DIA", image: "dia", correct: false },
+          { id: 4, label: "FEIO", image: "feio", correct: false },
+        ],
+        feedback: {
+          correct: "Excelente! Você conhece muito bem as palavras mágicas em Libras!",
+          wrong: "Tente novamente! Procure pelos sinais de POR FAVOR e OBRIGADA.",
+        },
+        points: 25,
       }
     ]
   },

@@ -8,6 +8,7 @@ import {
   NameInputStep,
   ChoiceStep,
   LibrasQuizStep,
+  LibrasImageQuizStep,
   DragDropStep,
   RecycleMinigameStep,
   FinaleStep,
@@ -167,6 +168,9 @@ export default function SceneEngine() {
           )}
           {step.type === 'libras_quiz' && (
             <LibrasQuizStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
+          )}
+          {step.type === 'libras_image_quiz' && (
+            <LibrasImageQuizStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
           )}
           {step.type === 'drag_drop' && (
             <DragDropStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />

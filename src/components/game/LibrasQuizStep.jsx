@@ -41,7 +41,7 @@ export default function LibrasQuizStep({ step, onCorrect, onWrong }) {
                 transition: 'all 0.3s var(--ease)',
                 transform: selected === opt.id ? 'scale(1.05)' : 'scale(1)',
               }}>
-              <span style={{ fontSize: '3rem', display: 'block', marginBottom: 'var(--space-sm)' }}>{opt.emoji}</span>
+              <span style={{ fontSize: '5rem', display: 'block', marginBottom: 'var(--space-sm)' }}>{opt.emoji}</span>
               <span style={{ fontWeight: 600, fontSize: 'var(--fs-lg)' }}>{opt.label}</span>
             </div>
           );

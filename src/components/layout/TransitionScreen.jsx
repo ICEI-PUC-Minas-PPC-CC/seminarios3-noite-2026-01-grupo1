@@ -8,13 +8,13 @@ import SCENES from '../../data/scenes';
 // Posições baseadas na nova imagem do mapa (caminho pontilhado roxo)
 // As coordenadas (x, y) são aproximadas com base na posição dos pins vermelhos e do caminho
 const POSITIONS = [
-  { x: 5, y: 65 },   // 0 (Start / Boas-Vindas - Perto da escola)
-  { x: 5, y: 65 },   // 1 Escola (Primeiro pin vermelho à esquerda)
-  { x: 33, y: 30 },  // 2 João Pinheiro (Segundo pin vermelho)
-  { x: 76, y: 26 },  // 3 Urca (Terceiro pin vermelho)
-  { x: 85, y: 26 },  // 4 Relógio (Quarto pin vermelho)
-  { x: 94, y: 50 },  // 5 Praça (Ao longo do caminho azul descendo)
-  { x: 94, y: 72 },  // 6 Cristo/Bondinho (Último pin perto da fonte)
+  { x: 13.3, y: 73.2 },  // 0 (Start / Boas-Vindas - Mesma posição da escola)
+  { x: 13.3, y: 73.2 },  // 1 Escola Tarso de Coimbra
+  { x: 23.9, y: 42.2 },  // 2 Avenida João Pinheiro
+  { x: 50.1, y: 22.5 },  // 3 Espaço Cultural da Urca
+  { x: 61.7, y: 49.3 },  // 4 Relógio Floral
+  { x: 71.0, y: 68.9 },  // 5 Praça do Palace
+  { x: 87.2, y: 29.2 },  // 6 Bondinho / Cristo
 ];
 
 export default function TransitionScreen({ show, fromScene, toScene, onComplete }) {
