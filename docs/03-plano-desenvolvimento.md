@@ -1,0 +1,88 @@
+# 03 — Plano e Cronograma de Desenvolvimento
+
+> **Grupo:** Danthe, Isabela, Laura, Luis, Thiago  
+> **Aplicação:** Cidade dos Valores
+
+---
+
+## 1. Divisão de Tarefas
+
+| Integrante | Responsabilidades principais |
+| ----------- | ------------------------------ |
+| Thiago | Documentação e Comunicação com a Comunidade |
+| Danthe | Desenvolvimento |
+| Laura | Desenvolvimento |
+| Luis | Arte e Desenvolvimento |
+| Isabela | Arte e Documentação |
+
+## 2. Cronograma de Desenvolvimento
+
+| Semana | Período (dd/MM à dd/MM) | Atividade planejada | Responsável | Status |
+| :------: | --------- | -------------------- | -----------: | :------: |
+| 1 | 18/02 à 25/02 | Formação do grupo | Todos | feito |
+| 2 | 01/03 à 07/03 | Contato com comunidade e Levantamento de demandas | Thiago | feito |
+| 3 | 15/03 à 21/03 | Definição de requisitos | Todos | feito |
+| 4 | 15/03 à 21/03 | Prototipação / wireframes | Thiago, Danthe e Luis | feito |
+| 5 | 29/03 a 04/04 | Desenvolvimento — Sprint 1 | Danthe e Laura | feito |
+| 6 | 05/04 a 09/04 | Desenvolvimento — Sprint 1 | Luis e Isabela | feito |
+| 7 | 13/04 a 18/04 | Validação com a comunidade | Thiago | não iniciado |
+| 8 | 19/04 a 25/04 | Desenvolvimento — Sprint 2 | Danthe e Laura | feito |
+| 9 | 26/04 a 02/05 | Desenvolvimento — Sprint 2 | Luis e Isabela | feito |
+| 10 | 03/05 a 09/05 | Testes e ajustes | Thiago, Danthe e Laura | iniciado |
+| 11 | 10/05 a 16/05 | Deploy / hospedagem | Danthe | não iniciado |
+| 12 | 18/05 a 23/05 | Validação final com a comunidade | Thiago | não iniciado |
+| 13 | 24/05 a 30/05 | **Entrega presencial** | Todos | não iniciado |
+| 14 | 31/05 a 06/06 | Preenchimento dos relatórios APC | Todos | não iniciado |
+
+> Ajuste o cronograma conforme o calendário do semestre e os feriados.
+
+## 3. Marcos (Milestones)
+
+| Marco | Data prevista | Critério de conclusão |
+| ------- | :------------: | ---------------------- |
+| Demandas levantadas | 06/03 | Registro de contato com a comunidade |
+| Requisitos definidos | 20/03 | Documento `02-documento-requisitos.md` preenchido |
+| Protótipo aprovado | 30/03 | Wireframes validados com a comunidade |
+| MVP funcional | 10/04 | Funcionalidades mínimas operacionais |
+| Deploy realizado | 20/05 | Aplicação acessível pela Internet |
+| Entrega presencial | 30/05 | Software apresentado à comunidade |
+| Relatórios APC | 13/06 | Relatório e autoavaliação preenchidos |
+
+## 4. Estratégia de Desenvolvimento
+
+### Ambiente de desenvolvimento
+
+O projeto será desenvolvido no Visual Studio Code, com controle de versão utilizando Git e repositório no GitHub.  
+A organização será feita com uma branch principal (main) e branches secundárias para funcionalidades, integradas via pull requests. Issues serão utilizadas para gerenciar tarefas e bugs.
+
+### Estratégia de testes
+
+**Testes funcionais**: validar mecânicas básicas (perguntas, pontuação, menus)  
+**Testes de integração**: verificar se os sistemas do jogo funcionam juntos  
+**Compatibilidade**: testar em diferentes navegadores e desktops  
+**Usabilidade**: coletar feedback de jogadores reais  
+**Testes regressivos**: garantir que mudanças não quebrem o que já funciona  
+**Organização**: usar checklists e ferramentas para registrar e acompanhar bugs  
+
+### Estratégia de deploy
+
+Fase Inicial: Utilizar o GitHub Pages para realizar o deploy do jogo de forma rápida, garantindo uma versão funcional e acessível para testes e entregas iniciais.  
+Fase de Otimização: Migrar o front-end para plataformas como Vercel ou Netlify, visando melhorar desempenho, automatizar deploys e aproveitar CDN.  
+Fase de Expansão: Caso o projeto evolua, implementar um backend com Node.js e integrar serviços como Firebase ou Supabase para suportar funcionalidades como autenticação, ranking e persistência de dados.  
+
+## 5. Riscos e Mitigações
+
+| Risco | Probabilidade | Impacto | Mitigação |
+| ------- | :------------: | :-------: | ---------- |
+| Atraso no cronograma | Baixa | Alto | Priorizar o essencial e definir entregas intermediárias. |
+| Dificuldade técnica inesperada | Alta | Baixo | Dividir o problema e buscar soluções alternativas rapidamente. |
+| Comunidade indisponível para reuniões | Média | Baixo | Usar comunicação assíncrona para obter feedback.|
+| Problemas de infraestrutura no dia da entrega | Médio | Moderado | Ter planos de backup e testar tudo antes da entrega. |
+
+## 6. Comunicação do Grupo
+
+| Canal | Finalidade |
+| ------- | ----------- |
+| Whatsapp | Comunicação diária |
+| GitHub Issues | Controle de tarefas |
+| Faculdade | Alinhamento do grupo |
