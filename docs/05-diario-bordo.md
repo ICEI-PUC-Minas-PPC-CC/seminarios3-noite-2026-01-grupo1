@@ -13,16 +13,20 @@
 
 ### Semana 01 — 18/02/2026 a 25/02/2026
 **O que foi feito:**
-*(Descrever as atividades realizadas nesta semana: desenvolvimento, reuniões, testes, etc.)*
+
+Na Semana 1, foi realizada a formação da equipe, o alinhamento inicial sobre as atividades e objetivos do projeto, além de uma divisão inicial das responsabilidades entre os membros."
 
 **Quem participou:**
+
 Danthe, Isabela, Laura, Luis, Thiago
 
 **Decisões técnicas tomadas:**
-*(Alguma decisão relevante sobre tecnologia, escopo, design, etc.?)*
+
+Foi decidido elaborar um esboço inicial e definir o escopo do projeto, com o objetivo de facilitar a organização das atividades, estruturar melhor o desenvolvimento e tornar a execução mais prática e eficiente.
 
 **Próximos passos:**
-*(O que precisa ser feito na próxima semana?)*
+
+Na próxima semana, o foco principal será estabelecer contato com a comunidade e realizar o levantamento das demandas e necessidades a serem atendidas pelo projeto.
 
 ---
 
