@@ -60,7 +60,7 @@ export default function SceneEngine() {
 
   const handleTransitionComplete = useCallback(() => {
     setTransitioning(false);
-    game.nextScene();
+    game.completePhase();
   }, [game]);
 
   const handleCharacterSelect = useCallback((char) => {

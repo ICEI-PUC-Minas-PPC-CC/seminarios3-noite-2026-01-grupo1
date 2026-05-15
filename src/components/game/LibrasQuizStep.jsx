@@ -9,9 +9,14 @@ export default function LibrasQuizStep({ step, onCorrect, onWrong }) {
     setSelected(opt.id);
     setShowFeedback(true);
     setTimeout(() => {
-      if (opt.correct) onCorrect(step.points || 15);
-      else onWrong();
-    }, 1800);
+      if (opt.correct) {
+        onCorrect(step.points || 15);
+      } else {
+        onWrong();
+        setSelected(null);
+        setShowFeedback(false);
+      }
+    }, 1500);
   };
 
   return (
@@ -25,7 +30,6 @@ export default function LibrasQuizStep({ step, onCorrect, onWrong }) {
           if (selected !== null) {
             if (opt.id === selected && opt.correct) borderColor = 'var(--success)';
             else if (opt.id === selected && !opt.correct) borderColor = 'var(--error)';
-            else if (opt.correct && showFeedback) borderColor = 'var(--success)';
           }
           return (
             <div key={opt.id}

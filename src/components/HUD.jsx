@@ -3,7 +3,7 @@ import imgJoao from '../assets/characters/joao.png';
 import imgMaria from '../assets/characters/maria.png';
 
 export default function HUD() {
-  const { lives, score, currentScene, character, backToMap } = useGame();
+  const { lives, score, currentScene, character, backToMap, restartGame } = useGame();
 
   const locations = [
     'Boas-Vindas', 'Escola Tarso', 'João Pinheiro',
@@ -17,6 +17,11 @@ export default function HUD() {
       <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-md)' }}>
         <button onClick={backToMap} className="hud-back-btn" title="Voltar ao mapa">
           ←
+        </button>
+        <button onClick={() => {
+          if (window.confirm('Tem certeza que deseja reiniciar o jogo todo?')) restartGame();
+        }} className="hud-back-btn" title="Reiniciar jogo">
+          🔄
         </button>
         <img
           src={character === 'maria' ? imgMaria : imgJoao}
