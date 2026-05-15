@@ -1,16 +1,77 @@
-# React + Vite
+# 💻 Seminários III — Projeto Extensionista
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Disciplina:** Seminários III — PUC Minas  
+> **Professor Responsável:** Harison Herman Silva  
+> **Formato:** Sala de aula invertida (protagonismo dos alunos)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 👥 Identificação do Grupo
 
-## React Compiler
+| Campo | Informação |
+| ------- | ----------- |
+| **Nome do Grupo** | Grupo 1 |
+| **Integrantes** | Danthe Belo de Souza Barros, Isabela Katelyn Vilas Boas, Laura Assis Monteiro, Luis Otavio Delapieri Meneghin, Thiago Baruffaldi de Carvalho |
+| **E-mail de contato** | thiagobaruffaldi42@gmail.com |
+| **Comunidade parceira** | Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Projeto Gamificação de Valores: Experiência Acessível em React ##
+Desenvolvimento de uma aplicação web interativa utilizando a biblioteca React, voltada ao ensino de valores éticos e cidadania para os alunos da Escola Tarso de Coimbra. O projeto prioriza a acessibilidade universal para a comunidade surda e com deficiência auditiva, implementando interfaces visuais intuitivas, suporte a Libras (Língua Brasileira de Sinais) e feedbacks táteis/visuais que garantem autonomia total ao usuário, independentemente do seu nível de audição.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## 📁 Estrutura do Repositório
+
+```cmd
+├── README.md                              ← Este arquivo
+├── docs/
+│   ├── 01-termo-autorizacao.md         ← Termo de autorização e agendamento
+│   ├── 02-documento-requisitos.md      ← Documento de requisitos do software
+│   ├── 03-plano-desenvolvimento.md     ← Plano e cronograma de desenvolvimento
+│   ├── 04-checklist-logistica.md       ← Checklist de preparação e logística
+│   ├── 05-diario-bordo.md             ← Diário de bordo do grupo
+│   └── 06-registro-contatos.md         ← Registro de contatos com a comunidade
+├── src/                                   ← Código-fonte da aplicação
+│   └── README.md                          ← Instruções de setup e execução
+├── evidencias/
+│   ├── fotos/                             ← Fotos da entrega presencial
+│   └── prints/                            ← Prints de tela da aplicação
+└── relatorios/
+    └── 07-relatorio-atividades.md      ← Base para o relatório APC (grupo)
+```
+
+---
+
+## 📋 Fluxo de Trabalho
+
+1. **Etapa 1 — Formação e Contato Inicial:** Preencher o `README.md`, contatar a comunidade, levantar demandas (`docs/06-registro-contatos.md`) e preencher o termo (`docs/01-termo-autorizacao.md`).
+2. **Etapa 2 — Requisitos:** Documentar os requisitos do software em contato com a comunidade (`docs/02-documento-requisitos.md`).
+3. **Etapa 3 — Desenvolvimento:** Desenvolver a aplicação (`src/`), seguindo o plano (`docs/03-plano-desenvolvimento.md`) e registrando o progresso (`docs/05-diario-bordo.md`).
+4. **Etapa 4 — Entrega Presencial:** Entregar o software presencialmente à comunidade. Registrar fotos em `evidencias/fotos/`.
+5. **Etapa 5 — Relatórios:** Preencher os relatórios no APC usando como base no `relatorios/07-relatorio-atividades.md`.
+
+---
+
+## 🛠️ Tecnologias Sugeridas
+
+O grupo tem liberdade de escolha. Sugestões do professor:
+
+- **Front-end:** HTML, CSS, JavaScript, React
+- **Back-end (opcional):** Node.js, Python (Flask/Streamlit), etc.
+- **Dados:** postgres, SQL
+- **Hospedagem gratuita:** Streamlit App, Vercel, Netlify, GitHub Pages, Railway
+
+---
+
+## ⚠️ Lembretes Importantes
+
+- O grupo **deve manter contato com a comunidade** ao longo do semestre (reuniões presenciais ou online).
+- A entrega do software **deve ser presencial** (no colégio parceiro ou na PUC Minas).
+- **Tirem muitas fotos** no dia da entrega — elas serão anexadas ao relatório APC.
+- Mantenham o **diário de bordo atualizado** ao longo do semestre.
+- Idealmente, o software deve ser **hospedado em nuvem** para acesso pela Internet.
+- Sem o desenvolvimento do software, entrega presencial e preenchimento dos relatórios, o grupo **não pode ser aprovado**.
+- Manter os commits de forma organizada , fazendo PR a cada novo commit em uma branch especifica com o objetivo de uma melhor documentação e visualição do que foi feito.
