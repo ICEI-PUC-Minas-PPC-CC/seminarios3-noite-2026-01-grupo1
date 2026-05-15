@@ -64,7 +64,7 @@ export default function TransitionScreen({ show, fromScene, toScene, onComplete 
       position: 'fixed', inset: 0, zIndex: 150,
       display: 'flex', flexDirection: 'column',
       alignItems: 'center', justifyContent: 'center',
-      background: 'rgba(10, 10, 26, 0.95)',
+      background: 'rgba(18, 24, 32, 0.98)',
       animation: 'fadeIn 0.4s var(--ease)',
       padding: 'var(--space-md)'
     }}>
@@ -81,12 +81,18 @@ export default function TransitionScreen({ show, fromScene, toScene, onComplete 
         border: '4px solid var(--border)',
         boxShadow: 'var(--shadow-lg)',
         overflow: 'hidden',
-        background: '#fff'
+        background: 'var(--bg-card)'
       }}>
         <img 
           src={mapImage} 
           alt="Mapa da Cidade" 
-          style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9 }} 
+          style={{ 
+            width: '100%', 
+            height: '100%', 
+            objectFit: 'cover', 
+            opacity: 0.9,
+            filter: 'saturate(0.7) contrast(1.1) brightness(0.9) sepia(0.1)'
+          }} 
         />
         
         {/* Marcador do personagem andando */}

@@ -190,10 +190,10 @@ const SCENES = [
         text: "Agora, jogue o papel na lixeira correta!",
         correctBin: "blue",
         bins: [
-          { id: "blue", label: "Papel", color: "#3498db", emoji: "📄" },
-          { id: "red", label: "Plástico", color: "#e74c3c", emoji: "🥤" },
-          { id: "yellow", label: "Metal", color: "#f1c40f", emoji: "🥫" },
-          { id: "green", label: "Vidro", color: "#2ecc71", emoji: "🍾" },
+          { id: "blue", label: "Papel", color: "#2980B9", emoji: "📄" },
+          { id: "red", label: "Plástico", color: "#C0392B", emoji: "🥤" },
+          { id: "yellow", label: "Metal", color: "#D4AC0D", emoji: "🥫" },
+          { id: "green", label: "Vidro", color: "#27AE60", emoji: "🍾" },
         ],
         feedback: {
           correct: "Parabéns! Papel vai na lixeira AZUL! ♻️",
