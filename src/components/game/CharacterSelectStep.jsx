@@ -1,8 +1,5 @@
 import { useState } from 'react';
 
-import imgJoao from '../../assets/characters/joao.png';
-import imgMaria from '../../assets/characters/maria.png';
-
 export default function CharacterSelectStep({ onSelect }) {
   const [selected, setSelected] = useState(null);
 
@@ -13,13 +10,13 @@ export default function CharacterSelectStep({ onSelect }) {
       </h2>
       <div className="character-grid">
         {[
-          { id: 'joao', name: 'João', img: imgJoao },
-          { id: 'maria', name: 'Maria', img: imgMaria },
+          { id: 'joao', name: 'João', emoji: '👦' },
+          { id: 'maria', name: 'Maria', emoji: '👩' },
         ].map((char) => (
           <div key={char.id} className={`character-card ${selected === char.id ? 'selected' : ''}`}
             onClick={() => setSelected(char.id)}>
-            <img src={char.img} alt={char.name} style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover', marginBottom: 'var(--space-md)', border: '4px solid var(--border)' }} className="animate-float" />
-            <span className="character-name" style={{ display: 'block' }}>{char.name}</span>
+            <span className="character-emoji">{char.emoji}</span>
+            <span className="character-name">{char.name}</span>
           </div>
         ))}
       </div>

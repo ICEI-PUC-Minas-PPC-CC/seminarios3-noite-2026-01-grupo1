@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useGame } from '../../contexts/GameContext';
-import mapImage from '../../assets/images/TransitionScreen.png';
-import imgJoao from '../../assets/characters/joao.png';
-import imgMaria from '../../assets/characters/maria.png';
 import SCENES from '../../data/scenes';
+import mapImage from '../../assets/images/TransitionScreen.png';
+import joaoImg from '../../assets/characters/joao.png';
+import mariaImg from '../../assets/characters/maria.png';
 
 // Posições baseadas na nova imagem do mapa (caminho pontilhado roxo)
 // As coordenadas (x, y) são aproximadas com base na posição dos pins vermelhos e do caminho
@@ -24,8 +24,8 @@ export default function TransitionScreen({ show, fromScene, toScene, onComplete 
   useEffect(() => {
     if (!show) { setProgress(0); return; }
 
-    const duration = 2500; // Duração da animação
-    const interval = 16; // ~60fps
+    const duration = 2000;
+    const interval = 16;
     const step = (interval / duration) * 100;
     let current = 0;
 
@@ -34,7 +34,7 @@ export default function TransitionScreen({ show, fromScene, toScene, onComplete 
       if (current >= 100) {
         setProgress(100);
         clearInterval(timer);
-        setTimeout(() => onComplete?.(), 500); // Pausa antes de mudar de cena
+        setTimeout(() => onComplete?.(), 300);
       } else {
         setProgress(current);
       }
@@ -43,21 +43,17 @@ export default function TransitionScreen({ show, fromScene, toScene, onComplete 
     return () => clearInterval(timer);
   }, [show, onComplete]);
 
+  const charImg = character === 'João' ? joaoImg : mariaImg;
+  
+  const fromPos = POSITIONS[fromScene] || POSITIONS[0];
+  const toPos = POSITIONS[toScene] || POSITIONS[fromScene] || POSITIONS[0];
+
+  const currentX = fromPos.x + (toPos.x - fromPos.x) * (progress / 100);
+  const currentY = fromPos.y + (toPos.y - fromPos.y) * (progress / 100);
+
+  const nextSceneName = SCENES[toScene]?.location || 'o próximo destino';
+
   if (!show) return null;
-
-  const charImg = character === 'maria' ? imgMaria : imgJoao;
-  
-  // Garantir limites
-  const safeFrom = Math.min(Math.max(0, fromScene), POSITIONS.length - 1);
-  const safeTo = Math.min(Math.max(0, toScene), POSITIONS.length - 1);
-  
-  const startPos = POSITIONS[safeFrom];
-  const endPos = POSITIONS[safeTo];
-
-  const currentX = startPos.x + (endPos.x - startPos.x) * (progress / 100);
-  const currentY = startPos.y + (endPos.y - startPos.y) * (progress / 100);
-
-  const nextSceneName = SCENES[safeTo]?.location || 'Próximo Local';
 
   return (
     <div style={{
@@ -124,8 +120,7 @@ export default function TransitionScreen({ show, fromScene, toScene, onComplete 
           </div>
         </div>
       </div>
-      
-      {/* Barra de progresso */}
+
       <div style={{ width: '80%', maxWidth: '400px', marginTop: 'var(--space-xl)' }}>
         <div className="progress-bar" style={{ height: '12px' }}>
           <div className="progress-bar-fill" style={{ width: `${progress}%`, transition: 'none' }} />

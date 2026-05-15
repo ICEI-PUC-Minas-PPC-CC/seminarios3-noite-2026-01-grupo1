@@ -250,14 +250,10 @@
   margin-top: var(--space-md);
 }
 
-.map-finish-img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--accent-light);
+.map-finish .finish-icon {
+  font-size: 4rem;
+  display: block;
   margin-bottom: var(--space-sm);
-  box-shadow: 0 0 20px rgba(253, 203, 110, 0.3);
 }
 
 .map-finish.locked {

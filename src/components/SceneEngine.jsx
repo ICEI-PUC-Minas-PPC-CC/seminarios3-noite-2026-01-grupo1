@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { useGame } from '../contexts/GameContext';
 import Confetti from './Confetti';
 import SCENES from '../data/scenes';
@@ -36,6 +36,11 @@ export default function SceneEngine() {
   const step = scene.steps[currentStep];
   if (!step) return null;
 
+  const handleTransitionComplete = useCallback(() => {
+    game.nextScene();
+    setTransitioning(false);
+  }, [game]);
+
   const handleCorrect = useCallback((points) => {
     setShowConfetti(true);
     game.addScore(points);
@@ -65,11 +70,6 @@ export default function SceneEngine() {
     }
   }, [currentStep, currentScene, scene?.steps?.length, game]);
 
-  const handleTransitionComplete = useCallback(() => {
-    setTransitioning(false);
-    game.completePhase();
-  }, [game]);
-
   const handleCharacterSelect = useCallback((char) => {
     game.setCharacter(char);
     handleNext();
@@ -85,19 +85,12 @@ export default function SceneEngine() {
     game.completeGame();
   }, [game]);
 
-  const sceneImages = {
-    1: imgEscola,
-    2: imgJoaoPinheiro,
-    3: imgUrca,
-    4: imgRelogio,
-    5: imgPraca,
-    6: imgBondinho,
-    7: imgCristo,
-  };
+  const currentBgImage = useMemo(() => {
+    const images = [null, imgEscola, imgJoaoPinheiro, imgUrca, imgRelogio, imgPraca, imgBondinho, imgCristo];
+    return images[currentScene] || null;
+  }, [currentScene]);
 
   const sceneIcons = ['🏙️', '🏫', '🚦', '🏛️', '⏰', '🌳', '🚡'];
-
-  const currentBgImage = sceneImages[currentScene];
 
   return (
     <>
