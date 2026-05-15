@@ -4,6 +4,23 @@ import config, { debugLog } from '../config';
 
 const AuthContext = createContext(null);
 
+function usernameToEmail(usernameRaw) {
+  const username = String(usernameRaw || '')
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, '.')
+    .replace(/[^a-z0-9._-]/g, '');
+
+  if (!username) {
+    throw new Error('Usuário inválido');
+  }
+
+  // A autenticação do Supabase usa email/senha. Para manter UX de "usuário+senha"
+  // (sem confirmação), mapeamos o usuário para um email sintético e armazenamos o
+  // username no metadata do usuário.
+  return `${username}@cidadevalores.local`;
+}
+
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -21,7 +38,7 @@ export function AuthProvider({ children }) {
           setUser(data.user);
           debugLog('Auth: sessão restaurada para', data.user.email);
         }
-      } catch (e) {
+      } catch {
         debugLog('Auth: sem sessão ativa');
       }
       setLoading(false);
@@ -40,18 +57,20 @@ export function AuthProvider({ children }) {
     return () => data.subscription.unsubscribe();
   }, []);
 
-  const signUp = useCallback(async (nome, email, password) => {
+  const signUp = useCallback(async (nome, username, password) => {
+    const email = usernameToEmail(username);
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { nome } },
+      options: { data: { nome, username: String(username || '').trim() } },
     });
     if (error) throw error;
     setUser(data.user);
     return data;
   }, []);
 
-  const signIn = useCallback(async (email, password) => {
+  const signIn = useCallback(async (username, password) => {
+    const email = usernameToEmail(username);
     const { data, error } = await supabase.auth.signInWithPassword({ email, password });
     if (error) throw error;
     setUser(data.user);

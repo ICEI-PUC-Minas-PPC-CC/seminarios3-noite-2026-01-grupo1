@@ -6,6 +6,7 @@ import CompletionScreen from './components/CompletionScreen'
 import Login from './pages/Login'
 import CityMap from './pages/CityMap'
 import { CharacterSelectStep } from './components/game'
+import { AuthProvider, useAuth } from './contexts/AuthContext'
 import './index.css'
 
 /**
@@ -16,11 +17,40 @@ import './index.css'
 function AppContent() {
   const game = useGame();
   const { view } = game;
+  const auth = useAuth();
+
+  if (auth.authRequired) {
+    if (auth.loading) {
+      return (
+        <div style={{
+          width: '100%', height: '100%',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          background: 'linear-gradient(135deg, #0A0A1A 0%, #1a1a3e 50%, #0A0A1A 100%)',
+          color: 'var(--text-secondary)',
+          fontFamily: 'var(--font)',
+        }}>
+          Carregando...
+        </div>
+      );
+    }
+
+    if (!auth.isAuthenticated) {
+      return (
+        <Login onLogin={(u) => {
+          if (u?.nome) game.setName(u.nome);
+          game.login();
+        }} />
+      );
+    }
+  }
 
   // === LOGIN ===
   if (view === 'welcome' || view === 'login') {
     return (
-      <Login onLogin={() => game.login()} />
+      <Login onLogin={(u) => {
+        if (u?.nome) game.setName(u.nome);
+        game.login();
+      }} />
     );
   }
 
@@ -70,11 +100,13 @@ function AppContent() {
 
 function App() {
   return (
-    <GameProvider>
-      <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-        <AppContent />
-      </div>
-    </GameProvider>
+    <AuthProvider>
+      <GameProvider>
+        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+          <AppContent />
+        </div>
+      </GameProvider>
+    </AuthProvider>
   )
 }
 

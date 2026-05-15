@@ -1,21 +1,40 @@
 import { useState } from 'react';
 import config from '../config';
 import imgCristo from '../assets/images/cristo.png';
+import { useAuth } from '../contexts/AuthContext';
 
 export default function Login({ onLogin }) {
+  const auth = useAuth();
   const [isRegister, setIsRegister] = useState(false);
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [nome, setNome] = useState('');
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError('');
     setLoading(true);
-    setTimeout(() => {
+
+    try {
+      const data = isRegister
+        ? await auth.signUp(nome || username, username, password)
+        : await auth.signIn(username, password);
+
+      const user = data?.user ?? auth.user;
+      const displayName =
+        user?.user_metadata?.nome ||
+        user?.user_metadata?.username ||
+        username ||
+        'Jogador';
+
+      onLogin?.({ id: user?.id, email: user?.email, nome: displayName });
+    } catch (err) {
+      setError(err?.message || 'Falha ao autenticar');
+    } finally {
       setLoading(false);
-      onLogin?.({ id: 'form-uuid', email: email || 'jogador@cv.com', nome: nome || 'Jogador' });
-    }, config.isMock ? config.mockDelayMs : 0);
+    }
   };
 
   const handleGuestLogin = () => {
@@ -68,13 +87,26 @@ export default function Login({ onLogin }) {
                 <input className="input-field" type="text" placeholder="Seu nome"
                   value={nome} onChange={(e) => setNome(e.target.value)} />
               )}
-              <input className="input-field" type="email" placeholder="Email"
-                value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input className="input-field" type="text" placeholder="Usuário"
+                autoCapitalize="none" autoCorrect="off" spellCheck={false}
+                value={username} onChange={(e) => setUsername(e.target.value)} />
               <input className="input-field" type="password" placeholder="Senha"
                 value={password} onChange={(e) => setPassword(e.target.value)} />
               <button className="btn btn-primary" type="submit" disabled={loading} style={{ width: '100%' }}>
                 {loading ? '⏳ Carregando...' : (isRegister ? 'Criar Conta' : 'Entrar')}
               </button>
+              {error && (
+                <div style={{
+                  color: '#ffb4b4',
+                  background: 'rgba(255, 0, 0, 0.10)',
+                  border: '1px solid rgba(255, 0, 0, 0.25)',
+                  padding: 'var(--space-sm)',
+                  borderRadius: 'var(--radius-md)',
+                  fontSize: 'var(--fs-sm)',
+                }} role="alert">
+                  {error}
+                </div>
+              )}
             </form>
             <div style={{ textAlign: 'center', marginTop: 'var(--space-lg)' }}>
               <button onClick={() => setIsRegister(!isRegister)}
