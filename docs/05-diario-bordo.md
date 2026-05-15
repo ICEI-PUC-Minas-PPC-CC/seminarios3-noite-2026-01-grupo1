@@ -37,6 +37,7 @@ Na próxima semana, o foco principal será estabelecer contato com a comunidade 
 Entramos em contato com a comunidade, mais especificamente com Fabiana Scassioti, com o objetivo de apresentar a proposta do projeto e alinhar as demandas iniciais identificadas.
 
 **Quem participou:**
+
 Danthe, Isabela, Laura, Luis, Thiago
 
 **Decisões técnicas tomadas:**
@@ -53,12 +54,19 @@ Na Semana 3, será realizada a definição dos requisitos do projeto, com o obje
 ### Semana 03 — 15/03/2026 a 21/03/2026
 **O que foi feito:**
 
+Foi realizado o levantamento e a organização dos requisitos do projeto, com o objetivo de estabelecer as funcionalidades e direcionar o desenvolvimento.
+
 **Quem participou:**
+
 Danthe, Isabela, Laura, Luis, Thiago
 
 **Decisões técnicas tomadas:**
 
+Foi decidido definir os requisitos do projeto com base nas necessidades identificadas na comunidade, priorizando funcionalidades essenciais para atender às demandas levantadas.
+
 **Próximos passos:**
+
+O próximo passo será a criação dos protótipos e wireframes para representar a estrutura inicial do projeto.
 
 ---
 
@@ -66,12 +74,19 @@ Danthe, Isabela, Laura, Luis, Thiago
 
 **O que foi feito:**
 
+Foram criados protótipos e wireframes iniciais com base nos requisitos definidos anteriormente, permitindo visualizar a estrutura, organização e fluxo das funcionalidades do projeto.
+
 **Quem participou:**
+
 Danthe, Isabela, Laura, Luis, Thiago
 
 **Decisões técnicas tomadas:**
 
+Foi realizada uma análise das funcionalidades do projeto, além da definição do escopo e elaboração de rascunhos iniciais, com o objetivo de estruturar melhor as ideias e direcionar o desenvolvimento
+
 **Próximos passos:**
+
+Na próxima semana, será iniciado o desenvolvimento do projeto com base nas definições, requisitos, protótipos e planejamentos realizados nas etapas anteriores.
 
 ---
 
