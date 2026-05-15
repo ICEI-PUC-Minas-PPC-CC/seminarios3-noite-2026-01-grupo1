@@ -17,7 +17,7 @@
 *(Descrever as atividades realizadas nesta semana: desenvolvimento, reuniões, testes, etc.)*
 
 **Quem participou:**
-*(Listar integrantes envolvidos.)*
+Danthe, Isabela, Laura, Luis, Thiago
 
 **Decisões técnicas tomadas:**
 *(Alguma decisão relevante sobre tecnologia, escopo, design, etc.?)*
@@ -32,6 +32,7 @@
 **O que foi feito:**
 
 **Quem participou:**
+Danthe, Isabela, Laura, Luis, Thiago
 
 **Decisões técnicas tomadas:**
 
@@ -44,6 +45,7 @@
 **O que foi feito:**
 
 **Quem participou:**
+Danthe, Isabela, Laura, Luis, Thiago
 
 **Decisões técnicas tomadas:**
 
@@ -56,6 +58,7 @@
 **O que foi feito:**
 
 **Quem participou:**
+Danthe, Isabela, Laura, Luis, Thiago
 
 **Decisões técnicas tomadas:**
 
@@ -68,6 +71,7 @@
 **O que foi feito:**
 
 **Quem participou:**
+Danthe, Isabela, Laura, Luis, Thiago
 
 **Decisões técnicas tomadas:**
 
