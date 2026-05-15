@@ -344,6 +344,37 @@ body {
   backdrop-filter: blur(8px);
 }
 
+.hud-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-light);
+}
+
+.hud-back-btn {
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: var(--fs-md);
+  transition: all var(--duration) var(--ease);
+  backdrop-filter: blur(8px);
+  font-family: var(--font);
+}
+
+.hud-back-btn:hover {
+  border-color: var(--primary-light);
+  color: var(--text-primary);
+  background: rgba(108, 92, 231, 0.2);
+}
+
 /* Dialogue Box */
 .dialogue-box {
   background: var(--bg-glass);
