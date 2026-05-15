@@ -14,6 +14,14 @@ import {
 } from './game';
 import TransitionScreen from './layout/TransitionScreen';
 
+import imgEscola from '../assets/images/escola.png';
+import imgJoaoPinheiro from '../assets/images/joao-pinheiro.png';
+import imgUrca from '../assets/images/urca.png';
+import imgRelogio from '../assets/images/relogio-floral.png';
+import imgPraca from '../assets/images/praca.png';
+import imgBondinho from '../assets/images/bondinho.png';
+import imgCristo from '../assets/images/cristo.png';
+
 export default function SceneEngine() {
   const game = useGame();
   const { currentScene, currentStep, character, playerName } = game;
@@ -70,17 +78,19 @@ export default function SceneEngine() {
     game.completeGame();
   }, [game]);
 
-  const bgGradients = {
-    0: 'linear-gradient(135deg, #0A0A1A 0%, #1a1a3e 50%, #0A0A1A 100%)',
-    1: 'linear-gradient(135deg, #1a2a1a 0%, #0A0A1A 100%)',
-    2: 'linear-gradient(135deg, #1a1a2a 0%, #2a1a1a 50%, #0A0A1A 100%)',
-    3: 'linear-gradient(135deg, #2a1a2a 0%, #1a2a3a 100%)',
-    4: 'linear-gradient(135deg, #1a2a1a 0%, #2a2a0a 50%, #0A0A1A 100%)',
-    5: 'linear-gradient(135deg, #0a1a2a 0%, #1a3a1a 100%)',
-    6: 'linear-gradient(135deg, #2a1a0a 0%, #0a2a3a 50%, #1a0a2a 100%)',
+  const sceneImages = {
+    1: imgEscola,
+    2: imgJoaoPinheiro,
+    3: imgUrca,
+    4: imgRelogio,
+    5: imgPraca,
+    6: imgBondinho,
+    7: imgCristo,
   };
 
   const sceneIcons = ['🏙️', '🏫', '🚦', '🏛️', '⏰', '🌳', '🚡'];
+
+  const currentBgImage = sceneImages[currentScene];
 
   return (
     <>
@@ -90,80 +100,85 @@ export default function SceneEngine() {
         toScene={currentScene + 1}
         onComplete={handleTransitionComplete}
       />
+      
       <div className="scene-container" style={{
-        background: bgGradients[currentScene] || bgGradients[0],
         opacity: transitioning ? 0 : 1,
         transition: 'opacity 0.8s var(--ease)',
       }}>
+        {/* Background Image Layer */}
+        <div className="scene-bg" style={{ 
+          backgroundImage: currentBgImage ? `url(${currentBgImage})` : 'linear-gradient(135deg, #0A0A1A 0%, #1a1a3e 50%, #0A0A1A 100%)' 
+        }} />
+
         <Confetti active={showConfetti} />
 
-      {scene.type === 'scene' && (
-        <div style={{
-          position: 'relative', zIndex: 1,
-          paddingTop: '80px', textAlign: 'center',
-          marginBottom: 'auto',
-        }}>
-          <span style={{ fontSize: '3rem' }}>
-            {sceneIcons[currentScene] || '🏙️'}
-          </span>
-          <h2 style={{
-            fontSize: 'var(--fs-xl)', fontWeight: 700,
-            marginTop: 'var(--space-sm)', color: 'var(--text-primary)'
+        {scene.type === 'scene' && (
+          <div style={{
+            position: 'relative', zIndex: 1,
+            paddingTop: '80px', textAlign: 'center',
+            marginBottom: 'auto',
           }}>
-            {scene.location}
-          </h2>
-          <div className="progress-bar" style={{ maxWidth: '300px', margin: 'var(--space-md) auto 0' }}>
-            <div className="progress-bar-fill"
-              style={{ width: `${((currentStep + 1) / scene.steps.length) * 100}%` }} />
+            <span style={{ fontSize: '3rem' }}>
+              {sceneIcons[currentScene] || '🏙️'}
+            </span>
+            <h2 style={{
+              fontSize: 'var(--fs-xl)', fontWeight: 700,
+              marginTop: 'var(--space-sm)', color: 'var(--text-primary)'
+            }}>
+              {scene.location}
+            </h2>
+            <div className="progress-bar" style={{ maxWidth: '300px', margin: 'var(--space-md) auto 0' }}>
+              <div className="progress-bar-fill"
+                style={{ width: `${((currentStep + 1) / scene.steps.length) * 100}%` }} />
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {scene.type === 'welcome' && (
-        <div style={{
-          position: 'relative', zIndex: 1,
-          paddingTop: '60px', textAlign: 'center',
-          marginBottom: 'auto',
-        }}>
-          <h1 className="gradient-text" style={{
-            fontSize: 'var(--fs-4xl)', fontWeight: 800,
-            lineHeight: 1.2, marginBottom: 'var(--space-sm)'
+        {scene.type === 'welcome' && (
+          <div style={{
+            position: 'relative', zIndex: 1,
+            paddingTop: '60px', textAlign: 'center',
+            marginBottom: 'auto',
           }}>
-            Cidade dos Valores
-          </h1>
-          <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--fs-lg)' }}>
-            Uma jornada por Poços de Caldas 🏙️
-          </p>
-        </div>
-      )}
+            <h1 className="gradient-text" style={{
+              fontSize: 'var(--fs-4xl)', fontWeight: 800,
+              lineHeight: 1.2, marginBottom: 'var(--space-sm)'
+            }}>
+              Cidade dos Valores
+            </h1>
+            <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--fs-lg)' }}>
+              Uma jornada por Poços de Caldas 🏙️
+            </p>
+          </div>
+        )}
 
-      <div className="scene-content" key={`${currentScene}-${currentStep}`}>
-        {step.type === 'dialogue' && (
-          <DialogueStep step={step} onNext={handleNext} character={character} playerName={playerName} />
-        )}
-        {step.type === 'character_select' && (
-          <CharacterSelectStep onSelect={handleCharacterSelect} />
-        )}
-        {step.type === 'name_input' && (
-          <NameInputStep onSubmit={handleNameSubmit} character={character} />
-        )}
-        {step.type === 'choice' && (
-          <ChoiceStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
-        )}
-        {step.type === 'libras_quiz' && (
-          <LibrasQuizStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
-        )}
-        {step.type === 'drag_drop' && (
-          <DragDropStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
-        )}
-        {step.type === 'recycle_minigame' && (
-          <RecycleMinigameStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
-        )}
-        {step.type === 'finale' && (
-          <FinaleStep step={step} onComplete={handleComplete} />
-        )}
+        <div className="scene-content" key={`${currentScene}-${currentStep}`} style={{ position: 'relative', zIndex: 1 }}>
+          {step.type === 'dialogue' && (
+            <DialogueStep step={step} onNext={handleNext} character={character} playerName={playerName} />
+          )}
+          {step.type === 'character_select' && (
+            <CharacterSelectStep onSelect={handleCharacterSelect} />
+          )}
+          {step.type === 'name_input' && (
+            <NameInputStep onSubmit={handleNameSubmit} character={character} />
+          )}
+          {step.type === 'choice' && (
+            <ChoiceStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
+          )}
+          {step.type === 'libras_quiz' && (
+            <LibrasQuizStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
+          )}
+          {step.type === 'drag_drop' && (
+            <DragDropStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
+          )}
+          {step.type === 'recycle_minigame' && (
+            <RecycleMinigameStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
+          )}
+          {step.type === 'finale' && (
+            <FinaleStep step={step} onComplete={handleComplete} />
+          )}
+        </div>
       </div>
-    </div>
     </>
   );
 }
