@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Cidade dos Valores - Jogo educativo gamificado sobre cidadania e valores éticos para a comunidade surda. Uma jornada visual por Poços de Caldas, MG." />
+  <meta name="theme-color" content="#6C5CE7" />
+  <title>Cidade dos Valores | Centro Tarso de Coimbra</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <!-- VLibras Widget -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <!-- guys , to vinculando com o site de libras do gov , mas a medida do tempo vamo ter q ver se os sinais tao certos -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>
