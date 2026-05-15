@@ -5,22 +5,16 @@ import imgJoao from '../../assets/characters/joao.png';
 import imgMaria from '../../assets/characters/maria.png';
 import SCENES from '../../data/scenes';
 
-// Posições aproximadas de cada fase na imagem do mapa.
-// 0: Boas-Vindas
-// 1: Escola Tarso
-// 2: João Pinheiro
-// 3: Urca
-// 4: Relógio Floral
-// 5: Praça Pedro Sanches
-// 6: Bondinho/Cristo
+// Posições baseadas na nova imagem do mapa (caminho pontilhado roxo)
+// As coordenadas (x, y) são aproximadas com base na posição dos pins vermelhos e do caminho
 const POSITIONS = [
-  { x: 5, y: 70 },   // 0 (Start)
-  { x: 10, y: 65 },  // 1 Escola
-  { x: 30, y: 55 },  // 2 João Pinheiro
-  { x: 50, y: 45 },  // 3 Urca
-  { x: 70, y: 35 },  // 4 Relógio
-  { x: 80, y: 25 },  // 5 Praça
-  { x: 92, y: 70 },  // 6 Cristo/Bondinho
+  { x: 5, y: 65 },   // 0 (Start / Boas-Vindas - Perto da escola)
+  { x: 5, y: 65 },   // 1 Escola (Primeiro pin vermelho à esquerda)
+  { x: 33, y: 30 },  // 2 João Pinheiro (Segundo pin vermelho)
+  { x: 76, y: 26 },  // 3 Urca (Terceiro pin vermelho)
+  { x: 85, y: 26 },  // 4 Relógio (Quarto pin vermelho)
+  { x: 94, y: 50 },  // 5 Praça (Ao longo do caminho azul descendo)
+  { x: 94, y: 72 },  // 6 Cristo/Bondinho (Último pin perto da fonte)
 ];
 
 export default function TransitionScreen({ show, fromScene, toScene, onComplete }) {
