@@ -1,7 +1,7 @@
 # 05 — Diário de Bordo do Grupo
 
-> **Grupo:** Danthe, Isabela, Laura, Luis, Thiago   
-> **Aplicação:** Cidade dos Valores   
+> **Grupo:** Danthe, Isabela, Laura, Luis, Thiago  
+> **Aplicação:** Cidade dos Valores
 
 ---
 
@@ -12,6 +12,7 @@
 ## Registro de Atividades
 
 ### Semana 01 — 18/02/2026 a 25/02/2026
+
 **O que foi feito:**
 
 Na Semana 1, foi realizada a formação da equipe, o alinhamento inicial sobre as atividades e objetivos do projeto, além de uma divisão inicial das responsabilidades entre os membros."
@@ -44,7 +45,6 @@ Thiago
 
 Foi decidido priorizar o contato com a comunidade para realizar o levantamento das demandas, permitindo que o escopo do projeto fosse definido de acordo com necessidades reais
 
-
 **Próximos passos:**
 
 Na Semana 3, será realizada a definição dos requisitos do projeto, com o objetivo de identificar e documentar as funcionalidades e necessidades levantadas.
@@ -52,6 +52,7 @@ Na Semana 3, será realizada a definição dos requisitos do projeto, com o obje
 ---
 
 ### Semana 03 — 15/03/2026 a 21/03/2026
+
 **O que foi feito:**
 
 Foi realizado o levantamento e a organização dos requisitos do projeto, com o objetivo de estabelecer as funcionalidades e direcionar o desenvolvimento.
@@ -102,7 +103,7 @@ Danthe, Laura
 
 **Decisões técnicas tomadas:**
 
-Foi decidido desenvolver o projeto com base nos requisitos, protótipos e definições estabelecidas anteriormente, priorizando uma estrutura organizada e de fácil manutenção. 
+Foi decidido desenvolver o projeto com base nos requisitos, protótipos e definições estabelecidas anteriormente, priorizando uma estrutura organizada e de fácil manutenção.
 
 **Próximos passos:**
 
@@ -110,7 +111,7 @@ Prosseguir com o desenvolvimento do projeto a partir das definições estabeleci
 
 ---
 
-### Semana 06 — ___/___/___ a ___/___/___
+### Semana 06 — **_/_**/**_ a _**/**_/_**
 
 **O que foi feito:**
 
@@ -122,7 +123,7 @@ Prosseguir com o desenvolvimento do projeto a partir das definições estabeleci
 
 ---
 
-### Semana 07 — ___/___/___ a ___/___/___
+### Semana 07 — **_/_**/**_ a _**/**_/_**
 
 **O que foi feito:**
 
@@ -134,7 +135,7 @@ Prosseguir com o desenvolvimento do projeto a partir das definições estabeleci
 
 ---
 
-### Semana 08 — ___/___/___ a ___/___/___
+### Semana 08 — **_/_**/**_ a _**/**_/_**
 
 **O que foi feito:**
 
@@ -146,48 +147,62 @@ Prosseguir com o desenvolvimento do projeto a partir das definições estabeleci
 
 ---
 
-### Semana 09 — ___/___/___ a ___/___/___
+### Semana 09 — 26/04/26 a 02/05/26
 
-**O que foi feito:**
+**O que foi feito:**  
+Prosseguimento do desenvolvimento da aplicação, ajustada às necessidades da comunidade.
 
-**Quem participou:**
+**Quem participou:**  
+Luis e Isabela
 
-**Decisões técnicas tomadas:**
+**Decisões técnicas tomadas:**  
+Mudança nas artes e no design geral do projeto.
 
-**Próximos passos:**
-
----
-
-### Semana 10 — ___/___/___ a ___/___/___
-
-**O que foi feito:**
-
-**Quem participou:**
-
-**Decisões técnicas tomadas:**
-
-**Próximos passos:**
+**Próximos passos:**  
+Testes e ajustes no código da aplicação.
 
 ---
 
-### Semana 11 — ___/___/___ a ___/___/___
+### Semana 10 — 03/05/26 a 09/05/26
 
 **O que foi feito:**
 
+Testes e ajustes no código base.
+
 **Quem participou:**
 
-**Decisões técnicas tomadas:**
+Thiago, Laura, Danthe
 
-**Próximos passos:**
+**Decisões técnicas tomadas:**  
+Melhoria na arquitetura do código e otimização de funcionlidades.
+
+**Próximos passos:**  
+Deploy e Hospedagem da aplicação.
+
+---
+
+### Semana 11 — 10/05/26 a 16/05/26
+
+**O que foi feito:**  
+Deploy e hospedagem.
+
+**Quem participou:**  
+Danthe
+
+**Decisões técnicas tomadas:**  
+Optamos pela hospedagem pela plataforma Vercel, ajustes e modificações necessários foram feitos.
+
+**Próximos passos:**  
+Validação final com a comunidade.
 
 ---
 
 ## Registro da Entrega Presencial
 
-**Data:** ___/___/___  
-**Local:**  
-**Horário:** ___ às ___  
-**Participantes do grupo presentes:**  
+**Data:** **_/_**/**\_  
+**Local:\*\*  
+**Horário:** \_** às \_\_\_  
+**Participantes do grupo presentes:\*\*  
 **Nº de participantes da comunidade:**
 
 ### Descrição da entrega
