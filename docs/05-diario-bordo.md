@@ -34,12 +34,19 @@ Na próxima semana, o foco principal será estabelecer contato com a comunidade 
 
 **O que foi feito:**
 
+Entramos em contato com a comunidade, mais especificamente com Fabiana Scassioti, com o objetivo de apresentar a proposta do projeto e alinhar as demandas iniciais identificadas.
+
 **Quem participou:**
 Danthe, Isabela, Laura, Luis, Thiago
 
 **Decisões técnicas tomadas:**
 
+Foi decidido priorizar o contato com a comunidade para realizar o levantamento das demandas, permitindo que o escopo do projeto fosse definido de acordo com necessidades reais
+
+
 **Próximos passos:**
+
+Na Semana 3, será realizada a definição dos requisitos do projeto, com o objetivo de identificar e documentar as funcionalidades e necessidades levantadas.
 
 ---
 
