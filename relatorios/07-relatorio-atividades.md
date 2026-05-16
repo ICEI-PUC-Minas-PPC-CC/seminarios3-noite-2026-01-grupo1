@@ -8,11 +8,11 @@
 
 | Campo | Informação |
 | ------- | ----------- |
-| Nome do Grupo | |
-| Integrantes participantes | |
+| Nome do Grupo | Grupo 1 |
+| Integrantes participantes | Danthe Belo de Souza Barros, Isabela Katelyn Vilas Boas, Laura Assis Monteiro, Luis Otavio Delapieri Meneghin, Thiago Baruffaldi de Carvalho |
 | Disciplina | Seminários III |
-| Comunidade atendida | |
-| Software desenvolvido | |
+| Comunidade atendida | Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra |
+| Software desenvolvido | Desenvolvimento em React de um jogo sobre Valores, com acessibilidade para usuários com qualquer nível de deficiência auditiva, tendo como público-alvo os alunos da escola Tarso de Coimbra. |
 | URL da aplicação (se hospedada) | |
 
 ## Cronograma de Desenvolvimento
