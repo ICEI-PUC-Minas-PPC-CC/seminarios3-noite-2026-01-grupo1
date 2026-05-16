@@ -97,7 +97,7 @@ export default function CompletionScreen() {
           fontWeight: 600, fontStyle: 'italic',
           marginBottom: 'var(--space-2xl)'
         }}>
-          "Nossa cidade é linda, e fica ainda mais bonita quando praticamos valores e respeitamos a todos!"
+          "Nossa cidade é linda, e fica ainda mais bonita quando aplicamos valores e respeitamos ela"
         </p>
 
         <button className="btn btn-primary" onClick={restartGame}

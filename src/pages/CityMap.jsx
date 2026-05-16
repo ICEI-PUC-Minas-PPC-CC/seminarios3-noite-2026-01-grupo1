@@ -106,7 +106,15 @@ export default function CityMap({ onStartPhase }) {
 
         <div className={`map-connector ${highestPhase > PHASES.length ? 'completed' : 'locked'}`}
           style={{ margin: '0 auto' }} />
-        <div className={`map-finish ${highestPhase > PHASES.length ? '' : 'locked'}`}>
+        <div 
+          className={`map-finish ${highestPhase > PHASES.length ? '' : 'locked'}`}
+          onClick={() => {
+            if (highestPhase > PHASES.length) {
+              onStartPhase?.(7);
+            }
+          }}
+          style={{ cursor: highestPhase > PHASES.length ? 'pointer' : 'default' }}
+        >
           <img src={imgCristo} alt="Cristo Redentor" className="map-finish-img" />
           <p className="gradient-text" style={{ fontWeight: 700 }}>Conclusão</p>
         </div>

@@ -31,20 +31,7 @@ const SCENES = [
     background: "escola",
     steps: [
       {
-        type: "dialogue",
-        character: true,
-        text: "Bom dia! Qual o seu nome?",
-        librasSign: "bom-dia",
-      },
-      {
         type: "name_input",
-        text: "Digite seu nome para se apresentar:",
-      },
-      {
-        type: "dialogue",
-        character: true,
-        textTemplate: "Prazer, {playerName}! Vamos passear pela cidade?",
-        librasSign: "prazer",
       }
     ]
   },
@@ -218,11 +205,20 @@ const SCENES = [
           wrong: "Tente novamente! O sinal correto é RESPEITO.",
         },
         points: 20,
-      },
+      }
+    ]
+  },
+
+  // CENA 7: Cristo Redentor (Cena Final)
+  {
+    id: 7,
+    phase: 7,
+    location: "Cristo Redentor",
+    type: "scene",
+    background: "cristo",
+    steps: [
       {
-        type: "finale",
-        text: "Nossa cidade é linda, e fica ainda mais bonita quando praticamos valores e respeitamos a todos!",
-        subtext: "Parabéns por completar a jornada pela Cidade dos Valores! 🎉",
+        type: "cristo_arrival",
       }
     ]
   },

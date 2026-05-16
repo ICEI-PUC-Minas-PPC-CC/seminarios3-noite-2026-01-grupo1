@@ -12,6 +12,7 @@ import {
   DragDropStep,
   RecycleMinigameStep,
   FinaleStep,
+  CristoArrivalStep,
 } from './game';
 import TransitionScreen from './layout/TransitionScreen';
 
@@ -62,6 +63,8 @@ export default function SceneEngine() {
       game.nextStep();
     } else if (currentScene + 1 < SCENES.length) {
       setTransitioning(true);
+    } else {
+      game.completeGame();
     }
   }, [currentStep, currentScene, scene?.steps?.length, game]);
 
@@ -183,6 +186,9 @@ export default function SceneEngine() {
           )}
           {step.type === 'recycle_minigame' && (
             <RecycleMinigameStep step={step} onCorrect={handleCorrect} onWrong={handleWrong} />
+          )}
+          {step.type === 'cristo_arrival' && (
+            <CristoArrivalStep step={step} onNext={handleNext} character={character} />
           )}
           {step.type === 'finale' && (
             <FinaleStep step={step} onComplete={handleComplete} />
