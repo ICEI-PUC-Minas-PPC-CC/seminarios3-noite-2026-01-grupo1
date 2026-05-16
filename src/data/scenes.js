@@ -187,19 +187,7 @@ const SCENES = [
       },
       {
         type: "recycle_minigame",
-        text: "Agora, jogue o papel na lixeira correta!",
-        correctBin: "blue",
-        bins: [
-          { id: "blue", label: "Papel", color: "#2980B9", emoji: "📄" },
-          { id: "red", label: "Plástico", color: "#C0392B", emoji: "🥤" },
-          { id: "yellow", label: "Metal", color: "#D4AC0D", emoji: "🥫" },
-          { id: "green", label: "Vidro", color: "#27AE60", emoji: "🍾" },
-        ],
-        feedback: {
-          correct: "Parabéns! Papel vai na lixeira AZUL! ♻️",
-          wrong: "Ops! Papel de bala vai na lixeira AZUL (Papel).",
-        },
-        points: 15,
+        points: 50,
       }
     ]
   },

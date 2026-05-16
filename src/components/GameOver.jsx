@@ -15,7 +15,7 @@ export default function GameOver() {
           alt="Personagem triste"
           style={{
             width: '120px', height: '120px', borderRadius: '50%',
-            objectFit: 'cover', border: '4px solid var(--error)',
+            objectFit: 'cover', objectPosition: 'top', border: '4px solid var(--error)',
             filter: 'brightness(0.7) saturate(0.5)',
             marginBottom: 'var(--space-lg)',
           }}

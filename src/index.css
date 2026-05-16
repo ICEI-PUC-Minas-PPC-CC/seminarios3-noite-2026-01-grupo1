@@ -353,6 +353,7 @@ body {
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top;
   border: 2px solid var(--primary-light);
 }
 
@@ -398,6 +399,7 @@ body {
   border-radius: var(--radius-full);
   border: 3px solid var(--primary-light);
   object-fit: cover;
+  object-position: top;
   flex-shrink: 0;
 }
 

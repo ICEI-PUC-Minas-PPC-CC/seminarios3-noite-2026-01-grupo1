@@ -111,7 +111,8 @@ export default function TransitionScreen({ show, fromScene, toScene, onComplete 
             border: '3px solid var(--primary-light)',
             boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
             backgroundColor: 'var(--bg-card)',
-            objectFit: 'cover'
+            objectFit: 'cover',
+            objectPosition: 'top'
           }} />
           {/* Seta animada embaixo do avatar */}
           <div style={{ 

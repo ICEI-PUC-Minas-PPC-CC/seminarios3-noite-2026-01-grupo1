@@ -18,7 +18,7 @@ export default function CharacterSelectStep({ onSelect }) {
         ].map((char) => (
           <div key={char.id} className={`character-card ${selected === char.id ? 'selected' : ''}`}
             onClick={() => setSelected(char.id)}>
-            <img src={char.img} alt={char.name} style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover', marginBottom: 'var(--space-md)', border: '4px solid var(--border)' }} className="animate-float" />
+            <img src={char.img} alt={char.name} style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'top', marginBottom: 'var(--space-md)', border: '4px solid var(--border)' }} className="animate-float" />
             <span className="character-name" style={{ display: 'block' }}>{char.name}</span>
           </div>
         ))}

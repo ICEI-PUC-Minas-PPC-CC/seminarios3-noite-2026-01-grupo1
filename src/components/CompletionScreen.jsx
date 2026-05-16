@@ -31,7 +31,7 @@ export default function CompletionScreen() {
         <img src={charImg} alt={character === 'maria' ? 'Maria' : 'João'}
           style={{
             width: '100px', height: '100px', borderRadius: '50%',
-            objectFit: 'cover', border: '4px solid var(--accent-light)',
+            objectFit: 'cover', objectPosition: 'top', border: '4px solid var(--accent-light)',
             marginBottom: 'var(--space-lg)',
             boxShadow: '0 0 30px rgba(253, 203, 110, 0.4)',
           }} className="animate-float" />
