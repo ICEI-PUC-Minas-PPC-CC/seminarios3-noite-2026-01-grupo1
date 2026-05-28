@@ -9,11 +9,21 @@ export default function CompletionScreen() {
   return (
     <div className="completion-overlay">
       <Confetti active={true} />
-      <div style={{ textAlign: 'center', padding: 'var(--space-2xl)', maxWidth: '600px', zIndex: 1 }}>
-        <div style={{ fontSize: '6rem', marginBottom: 'var(--space-lg)' }} className="animate-float">
-          🏆
-        </div>
-        <h1 className="gradient-text animate-in" style={{ fontSize: 'var(--fs-4xl)', marginBottom: 'var(--space-lg)' }}>
+
+      <div style={{
+        textAlign: 'center', padding: 'var(--space-2xl)',
+        maxWidth: '600px', zIndex: 1, position: 'relative',
+      }}>
+        <img src={charImg} alt={character === 'maria' ? 'Maria' : 'João'}
+          style={{
+            width: '100px', height: '100px', borderRadius: '50%',
+            objectFit: 'cover', border: '4px solid var(--accent-light)',
+            marginBottom: 'var(--space-lg)',
+            boxShadow: '0 0 30px rgba(253, 203, 110, 0.4)',
+          }} className="animate-float" />
+
+        <h1 className="gradient-text animate-in"
+          style={{ fontSize: 'clamp(1.8rem, 5vw, 3.5rem)', marginBottom: 'var(--space-md)', lineHeight: 1.2 }}>
           Parabéns, {playerName || 'Jogador'}!
         </h1>
         <p style={{
@@ -53,7 +63,7 @@ export default function CompletionScreen() {
           fontWeight: 600, fontStyle: 'italic',
           marginBottom: 'var(--space-2xl)'
         }}>
-          "Nossa cidade é linda, e fica ainda mais bonita quando praticamos valores e respeitamos a todos!"
+          "Nossa cidade é linda, e fica ainda mais bonita quando aplicamos valores e respeitamos ela"
         </p>
 
         <button className="btn btn-primary" onClick={restartGame}

@@ -31,20 +31,7 @@ const SCENES = [
     background: "escola",
     steps: [
       {
-        type: "dialogue",
-        character: true,
-        text: "Bom dia! Qual o seu nome?",
-        librasSign: "bom-dia",
-      },
-      {
         type: "name_input",
-        text: "Digite seu nome para se apresentar:",
-      },
-      {
-        type: "dialogue",
-        character: true,
-        textTemplate: "Prazer, {playerName}! Vamos passear pela cidade?",
-        librasSign: "prazer",
       }
     ]
   },
@@ -187,19 +174,7 @@ const SCENES = [
       },
       {
         type: "recycle_minigame",
-        text: "Agora, jogue o papel na lixeira correta!",
-        correctBin: "blue",
-        bins: [
-          { id: "blue", label: "Papel", color: "#2980B9", emoji: "📄" },
-          { id: "red", label: "Plástico", color: "#C0392B", emoji: "🥤" },
-          { id: "yellow", label: "Metal", color: "#D4AC0D", emoji: "🥫" },
-          { id: "green", label: "Vidro", color: "#27AE60", emoji: "🍾" },
-        ],
-        feedback: {
-          correct: "Parabéns! Papel vai na lixeira AZUL! ♻️",
-          wrong: "Ops! Papel de bala vai na lixeira AZUL (Papel).",
-        },
-        points: 15,
+        points: 50,
       }
     ]
   },
@@ -230,11 +205,20 @@ const SCENES = [
           wrong: "Tente novamente! O sinal correto é RESPEITO.",
         },
         points: 20,
-      },
+      }
+    ]
+  },
+
+  // CENA 7: Cristo Redentor (Cena Final)
+  {
+    id: 7,
+    phase: 7,
+    location: "Cristo Redentor",
+    type: "scene",
+    background: "cristo",
+    steps: [
       {
-        type: "finale",
-        text: "Nossa cidade é linda, e fica ainda mais bonita quando praticamos valores e respeitamos a todos!",
-        subtext: "Parabéns por completar a jornada pela Cidade dos Valores! 🎉",
+        type: "cristo_arrival",
       }
     ]
   },

@@ -7,3 +7,4 @@ export { default as LibrasImageQuizStep } from './LibrasImageQuizStep';
 export { default as DragDropStep } from './DragDropStep';
 export { default as RecycleMinigameStep } from './RecycleMinigameStep';
 export { default as FinaleStep } from './FinaleStep';
+export { default as CristoArrivalStep } from './CristoArrivalStep';

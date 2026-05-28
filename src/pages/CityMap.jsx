@@ -82,8 +82,8 @@ export default function CityMap({ onStartPhase }) {
 
         <div className={`map-connector ${currentPhase > PHASES.length ? 'completed' : 'locked'}`}
           style={{ margin: '0 auto' }} />
-        <div className={`map-finish ${currentPhase > PHASES.length ? '' : 'locked'}`}>
-          <span className="finish-icon">🏆</span>
+        <div className={`map-finish ${highestPhase > PHASES.length ? '' : 'locked'}`}>
+          <img src={imgCristo} alt="Cristo Redentor" className="map-finish-img" />
           <p className="gradient-text" style={{ fontWeight: 700 }}>Conclusão</p>
         </div>
       </div>

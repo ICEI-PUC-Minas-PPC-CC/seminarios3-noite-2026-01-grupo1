@@ -8,7 +8,16 @@ export default function GameOver() {
   return (
     <div className="game-over-overlay">
       <div className="game-over-card animate-scale">
-        <div style={{ fontSize: '5rem', marginBottom: '1rem' }}>💔</div>
+        <img
+          src={character === 'maria' ? imgMaria : imgJoao}
+          alt="Personagem triste"
+          style={{
+            width: '120px', height: '120px', borderRadius: '50%',
+            objectFit: 'cover', border: '4px solid var(--error)',
+            filter: 'brightness(0.7) saturate(0.5)',
+            marginBottom: 'var(--space-lg)',
+          }}
+        />
         <h2 style={{ color: 'var(--error)' }}>Ops! Suas vidas acabaram!</h2>
         <p style={{
           color: 'var(--text-secondary)',
