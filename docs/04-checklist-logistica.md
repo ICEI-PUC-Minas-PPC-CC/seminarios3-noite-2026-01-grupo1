@@ -28,10 +28,10 @@
 
 - [x] Repositório configurado com a estrutura do template
 - [x] Desenvolvimento do MVP iniciado
-- [ ] Contato intermediário com a comunidade para validação
+- [x] Contato intermediário com a comunidade para validação
 - [x] MVP funcional concluído
 - [x] Testes realizados
-- [ ] Deploy em nuvem realizado (se aplicável)
+- [x] Deploy em nuvem realizado (se aplicável)
 - [x] Aplicação acessível pela Internet
 
 ## 📋 Etapa 4 — Entrega Presencial

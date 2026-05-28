@@ -111,39 +111,39 @@ Prosseguir com o desenvolvimento do projeto a partir das definições estabeleci
 
 ---
 
-### Semana 06 — **_/_**/**_ a _**/**_/_**
+### Semana 06 — 05/04/26 a 09/04/26   
 
-**O que foi feito:**
+**O que foi feito:** Desenvolvimento das artes.   
 
-**Quem participou:**
+**Quem participou:** Luís e Isabela     
 
-**Decisões técnicas tomadas:**
+**Decisões técnicas tomadas:** Escolhas artísticas acerca de fontes, cores,     animações
 
-**Próximos passos:**
-
----
-
-### Semana 07 — **_/_**/**_ a _**/**_/_**
-
-**O que foi feito:**
-
-**Quem participou:**
-
-**Decisões técnicas tomadas:**
-
-**Próximos passos:**
+**Próximos passos:** Validação com a comunidade.     
 
 ---
 
-### Semana 08 — **_/_**/**_ a _**/**_/_**
+### Semana 07 — 13/04/26 a 18/04/26  
 
-**O que foi feito:**
+**O que foi feito:** Validação com a comunidade   
 
-**Quem participou:**
+**Quem participou:** Thiago    
 
-**Decisões técnicas tomadas:**
+**Decisões técnicas tomadas:** A validação foi feita com sucesso, não houveram decisões para além do plano inicial.     
 
-**Próximos passos:**
+**Próximos passos:** Início do Desenvolvimento da Sprint2
+
+---
+
+### Semana 08 — 19/04/26 a 25/04/26   
+
+**O que foi feito:** Desenvolvimento inicial da sprint 2 - mapa, novos jogos e início do desenvolvimento para mobile.  
+
+**Quem participou:** Laura e Danthe.  
+
+**Decisões técnicas tomadas:** Adaptação do código para novo ambiente.  
+
+**Próximos passos:** Continuação do desenvolvimento da sprint2.  
 
 ---
 

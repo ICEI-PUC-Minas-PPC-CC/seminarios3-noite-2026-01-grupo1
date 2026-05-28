@@ -68,9 +68,9 @@ Link para o protótipo no FIGMA: [https://www.figma.com/site/S3FYxBOoaMfQRjlPZhA
 
 (Quais funcionalidades compõem a versão mínima que pode ser entregue à comunidade?)
 
-- [ ] Aplicação Web interativa, retratando Valores.
-- [ ] Acessibilidade para Deficiência Auditiva/Surdez.
-- [ ] Exemplos em Libras dentro da aplicação.
+- [x] Aplicação Web interativa, retratando Valores.
+- [x] Acessibilidade para Deficiência Auditiva/Surdez.
+- [x] Exemplos em Libras dentro da aplicação.
 
 ## 9. Funcionalidades Desejáveis (se houver tempo)
 

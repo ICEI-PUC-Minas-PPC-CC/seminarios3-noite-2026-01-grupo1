@@ -3,9 +3,9 @@
 > **Status:**  (adicione um "x" para completar cada nível)
 
 - [x] Visualizado
-- [ ] Pendente
-- [ ] Enviado ao professor
-- [ ] Aprovado  
+- [x] Pendente
+- [x] Enviado ao professor
+- [x] Aprovado  
 
 > **Versão do termo .docx:** [S3_termo_autorizacao.docx](https://github.com/user-attachments/files/25920528/S3_termo_autorizacao.docx)
 
