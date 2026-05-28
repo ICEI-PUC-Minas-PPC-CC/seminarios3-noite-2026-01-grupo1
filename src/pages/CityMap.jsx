@@ -11,7 +11,7 @@ function createSeededRandom(seed) {
 
 export default function CityMap({ onStartPhase }) {
   const { currentScene, highestPhase, score, character, playerName } = useGame();
-  const currentPhase = currentScene;
+  const currentPhase = currentScene <= 0 ? 1 : currentScene;
 
   const stars = useMemo(
     () => Array.from({ length: 30 }, (_, i) => ({
@@ -72,7 +72,7 @@ export default function CityMap({ onStartPhase }) {
             <div key={phase.id}>
               {index > 0 && (
                 <div
-                  className={`map-connector ${index < currentPhase ? 'completed' : index === currentPhase - 1 ? 'current' : 'locked'}`}
+                  className={`map-connector ${index + 1 < currentPhase ? 'completed' : index + 1 === currentPhase ? 'current' : 'locked'}`}
                   style={{ margin: '0 auto' }}
                 />
               )}
