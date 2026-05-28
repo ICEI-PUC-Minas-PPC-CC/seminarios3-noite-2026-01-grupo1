@@ -26,21 +26,28 @@ Desenvolvimento de uma aplicação web interativa utilizando a biblioteca React,
 ## 📁 Estrutura do Repositório
 
 ```cmd
-├── README.md                              ← Este arquivo
+├── README.md                       <- Este arquivo
 ├── docs/
-│   ├── 01-termo-autorizacao.md         ← Termo de autorização e agendamento
-│   ├── 02-documento-requisitos.md      ← Documento de requisitos do software
-│   ├── 03-plano-desenvolvimento.md     ← Plano e cronograma de desenvolvimento
-│   ├── 04-checklist-logistica.md       ← Checklist de preparação e logística
-│   ├── 05-diario-bordo.md             ← Diário de bordo do grupo
-│   └── 06-registro-contatos.md         ← Registro de contatos com a comunidade
-├── src/                                   ← Código-fonte da aplicação
-│   └── README.md                          ← Instruções de setup e execução
+│   ├── 01-termo-autorizacao.md     <- Termo de autorização e agendamento
+│   ├── 02-documento-requisitos.md  <- Documento de requisitos do software
+│   ├── 03-plano-desenvolvimento.md <- Plano e cronograma de desenvolvimento
+│   ├── 04-checklist-logistica.md   <- Checklist de preparação e logística
+│   ├── 05-diario-bordo.md          <- Diário de bordo do grupo
+│   └── 06-registro-contatos.md     <- Registro de contatos com a comunidade
 ├── evidencias/
-│   ├── fotos/                             ← Fotos da entrega presencial
-│   └── prints/                            ← Prints de tela da aplicação
-└── relatorios/
-    └── 07-relatorio-atividades.md      ← Base para o relatório APC (grupo)
+│   ├── fotos/                      <- Fotos da entrega presencial
+│   └── prints/                     <- Prints de tela da aplicação
+├── public/                         <- Arquivos estáticos públicos da aplicação
+│   ├── favicon.svg
+│   └── icons.svg
+├── relatorios/
+│   └── 07-relatorio-atividades.md  <- Base para o relatório APC (grupo)
+├── src/                            <- Código-fonte da aplicação
+│   └── README.md                   <- Instruções de setup e execução
+└── venv/                           <- Ambiente virtual Python (dependências)
+    ├── bin/
+    ├── lib64
+    └── pyvenv.cfg
 ```
 
 ---
