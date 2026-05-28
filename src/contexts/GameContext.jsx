@@ -1,5 +1,6 @@
-import { createContext, useContext, useReducer, useEffect, useCallback } from 'react';
+import { useReducer, useEffect, useCallback } from 'react';
 import config, { debugLog } from '../config';
+import { GameContext } from './GameContextValue';
 
 const INITIAL_STATE = {
   view: 'welcome',
@@ -113,12 +114,12 @@ function gameReducer(state, action) {
   }
 }
 
-const GameContext = createContext(null);
-
 export function GameProvider({ children }) {
   const [state, dispatch] = useReducer(gameReducer, null, loadState);
 
-  useEffect(() => { saveState(state); }, [state]);
+  useEffect(() => {
+    saveState(state);
+  }, [state]);
 
   const setView = useCallback((view) => dispatch({ type: 'SET_VIEW', payload: view }), []);
   const login = useCallback(() => dispatch({ type: 'LOGIN' }), []);
@@ -138,17 +139,22 @@ export function GameProvider({ children }) {
 
   const value = {
     ...state,
-    setView, login, logout, setCharacter, setName,
-    startPhase, nextStep, nextScene, completePhase,
-    addScore, loseLife, completeGame,
-    restartScene, restartGame, backToMap,
+    setView,
+    login,
+    logout,
+    setCharacter,
+    setName,
+    startPhase,
+    nextStep,
+    nextScene,
+    completePhase,
+    addScore,
+    loseLife,
+    completeGame,
+    restartScene,
+    restartGame,
+    backToMap,
   };
 
   return <GameContext.Provider value={value}>{children}</GameContext.Provider>;
-}
-
-export function useGame() {
-  const ctx = useContext(GameContext);
-  if (!ctx) throw new Error('useGame deve ser usado dentro de GameProvider');
-  return ctx;
 }

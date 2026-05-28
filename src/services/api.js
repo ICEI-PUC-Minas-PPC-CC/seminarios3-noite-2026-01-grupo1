@@ -3,13 +3,13 @@ import config, { debugLog } from '../config';
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const mockApi = {
-  async register(nome, email, password) {
+  async register(nome, email) {
     await delay(config.mockDelayMs);
     debugLog('API register:', { nome, email });
     return { id: 'mock-uuid', nome, email };
   },
 
-  async login(email, password) {
+  async login(email) {
     await delay(config.mockDelayMs);
     debugLog('API login:', email);
     return { token: 'mock-token', user: { id: 'mock-uuid', email } };

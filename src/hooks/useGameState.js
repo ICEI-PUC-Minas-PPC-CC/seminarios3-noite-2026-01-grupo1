@@ -1,4 +1,4 @@
-import { useGame } from '../contexts/GameContext';
+import { useGame } from '../contexts/useGame';
 import { PHASES } from '../data/mockData';
 
 export default function useGameState() {

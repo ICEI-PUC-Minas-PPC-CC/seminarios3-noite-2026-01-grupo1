@@ -1,4 +1,4 @@
-export default function LibrasSign({ sinal, gifUrl, altText, autoPlay = true }) {
+export default function LibrasSign({ sinal, gifUrl, altText }) {
   if (gifUrl) {
     return (
       <div className="libras-sign animate-in" style={{

@@ -1,5 +1,5 @@
-import { useState, useCallback, useMemo } from 'react';
-import { useGame } from '../contexts/GameContext';
+import { useState, useMemo } from 'react';
+import { useGame } from '../contexts/useGame';
 import Confetti from './Confetti';
 import SCENES from '../data/scenes';
 import {
@@ -32,17 +32,23 @@ export default function SceneEngine() {
   const [showCongrats, setShowCongrats] = useState(false);
   const [transitioning, setTransitioning] = useState(false);
 
+  const currentBgImage = useMemo(() => {
+    const images = [null, imgEscola, imgJoaoPinheiro, imgUrca, imgRelogio, imgPraca, imgBondinho, imgCristo];
+    return images[currentScene] || null;
+  }, [currentScene]);
+
   const scene = SCENES[currentScene];
   if (!scene) return null;
+
   const step = scene.steps[currentStep];
   if (!step) return null;
 
-  const handleTransitionComplete = useCallback(() => {
+  const handleTransitionComplete = () => {
     game.nextScene();
     setTransitioning(false);
-  }, [game]);
+  };
 
-  const handleCorrect = useCallback((points) => {
+  const handleCorrect = (points) => {
     setShowConfetti(true);
     game.addScore(points);
     setTimeout(() => {
@@ -57,13 +63,13 @@ export default function SceneEngine() {
         }, 2500);
       }
     }, 1500);
-  }, [currentStep, currentScene, scene?.steps?.length, game]);
+  };
 
-  const handleWrong = useCallback(() => {
+  const handleWrong = () => {
     game.loseLife();
-  }, [game]);
+  };
 
-  const handleNext = useCallback(() => {
+  const handleNext = () => {
     if (currentStep + 1 < scene.steps.length) {
       game.nextStep();
     } else if (currentScene + 1 < SCENES.length) {
@@ -71,86 +77,107 @@ export default function SceneEngine() {
     } else {
       game.completeGame();
     }
-  }, [currentStep, currentScene, scene?.steps?.length, game]);
+  };
 
-  const handleCharacterSelect = useCallback((char) => {
+  const handleCharacterSelect = (char) => {
     game.setCharacter(char);
     handleNext();
-  }, [game, handleNext]);
+  };
 
-  const handleNameSubmit = useCallback((name) => {
+  const handleNameSubmit = (name) => {
     game.setName(name);
     handleNext();
-  }, [game, handleNext]);
+  };
 
-  const handleComplete = useCallback(() => {
+  const handleComplete = () => {
     setShowConfetti(true);
     game.completeGame();
-  }, [game]);
-
-  const currentBgImage = useMemo(() => {
-    const images = [null, imgEscola, imgJoaoPinheiro, imgUrca, imgRelogio, imgPraca, imgBondinho, imgCristo];
-    return images[currentScene] || null;
-  }, [currentScene]);
+  };
 
   const sceneIcons = ['🏙️', '🏫', '🚦', '🏛️', '⏰', '🌳', '🚡'];
 
   return (
     <>
-      <TransitionScreen 
+      <TransitionScreen
         show={transitioning}
         fromScene={currentScene}
         toScene={currentScene + 1}
         onComplete={handleTransitionComplete}
       />
-      
-      <div className="scene-container" style={{
-        opacity: transitioning ? 0 : 1,
-        transition: 'opacity 0.8s var(--ease)',
-      }}>
-        {/* Background Image Layer */}
-        <div className="scene-bg" style={{ 
-          backgroundImage: currentBgImage ? `url(${currentBgImage})` : 'linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-card) 50%, var(--bg-dark) 100%)' 
-        }} />
+
+      <div
+        className="scene-container"
+        style={{
+          opacity: transitioning ? 0 : 1,
+          transition: 'opacity 0.8s var(--ease)',
+        }}
+      >
+        <div
+          className="scene-bg"
+          style={{
+            backgroundImage: currentBgImage
+              ? `url(${currentBgImage})`
+              : 'linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-card) 50%, var(--bg-dark) 100%)',
+          }}
+        />
 
         <Confetti active={showConfetti} />
 
         {scene.type === 'scene' && (
-          <div style={{
-            position: 'relative', zIndex: 1,
-            paddingTop: '80px', textAlign: 'center',
-            marginBottom: 'auto',
-          }}>
+          <div
+            style={{
+              position: 'relative',
+              zIndex: 1,
+              paddingTop: '80px',
+              textAlign: 'center',
+              marginBottom: 'auto',
+            }}
+          >
             <span style={{ fontSize: '3rem' }}>
               {sceneIcons[currentScene] || '🏙️'}
             </span>
-            <h2 style={{
-              fontSize: 'var(--fs-xl)', fontWeight: 700,
-              marginTop: 'var(--space-sm)', color: 'var(--text-primary)'
-            }}>
+            <h2
+              style={{
+                fontSize: 'var(--fs-xl)',
+                fontWeight: 700,
+                marginTop: 'var(--space-sm)',
+                color: 'var(--text-primary)',
+              }}
+            >
               {scene.location}
             </h2>
             <div className="progress-bar" style={{ maxWidth: '300px', margin: 'var(--space-md) auto 0' }}>
-              <div className="progress-bar-fill"
-                style={{ width: `${((currentStep + 1) / scene.steps.length) * 100}%` }} />
+              <div
+                className="progress-bar-fill"
+                style={{ width: `${((currentStep + 1) / scene.steps.length) * 100}%` }}
+              />
             </div>
           </div>
         )}
 
         {scene.type === 'welcome' && (
-          <div style={{
-            position: 'relative', zIndex: 1,
-            paddingTop: '60px', textAlign: 'center',
-            marginBottom: 'auto',
-          }}>
-            <h1 className="gradient-text" style={{
-              fontSize: 'var(--fs-4xl)', fontWeight: 800,
-              lineHeight: 1.2, marginBottom: 'var(--space-sm)'
-            }}>
+          <div
+            style={{
+              position: 'relative',
+              zIndex: 1,
+              paddingTop: '60px',
+              textAlign: 'center',
+              marginBottom: 'auto',
+            }}
+          >
+            <h1
+              className="gradient-text"
+              style={{
+                fontSize: 'var(--fs-4xl)',
+                fontWeight: 800,
+                lineHeight: 1.2,
+                marginBottom: 'var(--space-sm)',
+              }}
+            >
               Cidade dos Valores
             </h1>
             <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--fs-lg)' }}>
-              Uma jornada por Poços de Caldas 🏙️
+              Uma jornada por Pocos de Caldas 🏙️
             </p>
           </div>
         )}
@@ -190,17 +217,29 @@ export default function SceneEngine() {
       </div>
 
       {showCongrats && (
-        <div style={{
-          position: 'fixed', inset: 0, zIndex: 200,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          background: 'rgba(0, 0, 0, 0.8)',
-          animation: 'fadeIn 0.3s var(--ease)'
-        }}>
-          <img src={imgParabens} alt="Parabéns!" style={{
-            maxWidth: '90%', maxHeight: '90%',
-            borderRadius: 'var(--radius-lg)',
-            boxShadow: '0 0 50px rgba(255, 255, 255, 0.2)'
-          }} className="animate-scale" />
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 200,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'rgba(0, 0, 0, 0.8)',
+            animation: 'fadeIn 0.3s var(--ease)',
+          }}
+        >
+          <img
+            src={imgParabens}
+            alt="Parabens!"
+            style={{
+              maxWidth: '90%',
+              maxHeight: '90%',
+              borderRadius: 'var(--radius-lg)',
+              boxShadow: '0 0 50px rgba(255, 255, 255, 0.2)',
+            }}
+            className="animate-scale"
+          />
         </div>
       )}
     </>

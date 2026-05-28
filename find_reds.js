@@ -1,41 +1,45 @@
+/* global require */
 const Jimp = require('jimp');
 
 Jimp.read('./src/assets/images/TransitionScreen.png')
-  .then(image => {
+  .then((image) => {
     const w = image.bitmap.width;
     const h = image.bitmap.height;
     const redPixels = [];
 
-    for(let y = 0; y < h; y+=2) {
-      for(let x = 0; x < w; x+=2) {
+    for (let y = 0; y < h; y += 2) {
+      for (let x = 0; x < w; x += 2) {
         const color = Jimp.intToRGBA(image.getPixelColor(x, y));
-        // Simple red check
-        if(color.r > 200 && color.g < 100 && color.b < 100) {
-          redPixels.push({x: Math.round((x/w)*100), y: Math.round((y/h)*100)});
+        if (color.r > 200 && color.g < 100 && color.b < 100) {
+          redPixels.push({ x: Math.round((x / w) * 100), y: Math.round((y / h) * 100) });
         }
       }
     }
 
     const clusters = [];
-    for(const p of redPixels) {
+    for (const pixel of redPixels) {
       let found = false;
-      for(const c of clusters) {
-        if(Math.abs(c.x - p.x) < 5 && Math.abs(c.y - p.y) < 5) {
-          c.x = (c.x * c.count + p.x) / (c.count + 1);
-          c.y = (c.y * c.count + p.y) / (c.count + 1);
-          c.count++;
+      for (const cluster of clusters) {
+        if (Math.abs(cluster.x - pixel.x) < 5 && Math.abs(cluster.y - pixel.y) < 5) {
+          cluster.x = (cluster.x * cluster.count + pixel.x) / (cluster.count + 1);
+          cluster.y = (cluster.y * cluster.count + pixel.y) / (cluster.count + 1);
+          cluster.count += 1;
           found = true;
           break;
         }
       }
-      if(!found) {
-        clusters.push({x: p.x, y: p.y, count: 1});
+      if (!found) {
+        clusters.push({ x: pixel.x, y: pixel.y, count: 1 });
       }
     }
 
-    clusters.sort((a,b) => a.x - b.x);
-    console.log("Found clusters:", clusters.filter(c => c.count > 5).map(c => ({x: Math.round(c.x), y: Math.round(c.y), size: c.count})));
+    clusters.sort((a, b) => a.x - b.x);
+    console.log('Found clusters:', clusters.filter((cluster) => cluster.count > 5).map((cluster) => ({
+      x: Math.round(cluster.x),
+      y: Math.round(cluster.y),
+      size: cluster.count,
+    })));
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err);
   });

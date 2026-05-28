@@ -1,23 +1,30 @@
-import { useState, useEffect } from 'react';
+import { useMemo } from 'react';
+
+function createSeededRandom(seed) {
+  const x = Math.sin(seed) * 10000;
+  return x - Math.floor(x);
+}
 
 export default function Confetti({ active }) {
-  const [pieces, setPieces] = useState([]);
+  const pieces = useMemo(() => {
+    if (!active) return [];
 
-  useEffect(() => {
-    if (!active) { setPieces([]); return; }
     const colors = ['#6C5CE7', '#00CEC9', '#FD79A8', '#FDCB6E', '#55EFC4', '#FF6B6B', '#A29BFE'];
-    const newPieces = Array.from({ length: 50 }, (_, i) => ({
-      id: i,
-      left: Math.random() * 100,
-      color: colors[Math.floor(Math.random() * colors.length)],
-      delay: Math.random() * 2,
-      duration: 2 + Math.random() * 3,
-      size: 6 + Math.random() * 8,
-      rotation: Math.random() * 360,
-    }));
-    setPieces(newPieces);
-    const timer = setTimeout(() => setPieces([]), 5000);
-    return () => clearTimeout(timer);
+    return Array.from({ length: 50 }, (_, i) => {
+      const seed = i + 1;
+      const colorIndex = Math.floor(createSeededRandom(seed * 2) * colors.length);
+
+      return {
+        id: i,
+        left: createSeededRandom(seed * 3) * 100,
+        color: colors[colorIndex],
+        delay: createSeededRandom(seed * 5) * 2,
+        duration: 2 + createSeededRandom(seed * 7) * 3,
+        size: 6 + createSeededRandom(seed * 11) * 8,
+        rotation: createSeededRandom(seed * 13) * 360,
+        borderRadius: createSeededRandom(seed * 17) > 0.5 ? '50%' : '2px',
+      };
+    });
   }, [active]);
 
   if (pieces.length === 0) return null;
@@ -33,7 +40,7 @@ export default function Confetti({ active }) {
             width: `${p.size}px`,
             height: `${p.size}px`,
             backgroundColor: p.color,
-            borderRadius: Math.random() > 0.5 ? '50%' : '2px',
+            borderRadius: p.borderRadius,
             animationDelay: `${p.delay}s`,
             animationDuration: `${p.duration}s`,
             transform: `rotate(${p.rotation}deg)`,

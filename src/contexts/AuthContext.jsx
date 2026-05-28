@@ -1,8 +1,7 @@
-import { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { supabase } from '../services/supabaseClient';
 import config, { debugLog } from '../config';
-
-const AuthContext = createContext(null);
+import { AuthContext } from './AuthContextValue';
 
 function usernameToEmail(usernameRaw) {
   const username = String(usernameRaw || '')
@@ -12,12 +11,9 @@ function usernameToEmail(usernameRaw) {
     .replace(/[^a-z0-9._-]/g, '');
 
   if (!username) {
-    throw new Error('Usuário inválido');
+    throw new Error('Usuario invalido');
   }
 
-  // A autenticação do Supabase usa email/senha. Para manter UX de "usuário+senha"
-  // (sem confirmação), mapeamos o usuário para um email sintético e armazenamos o
-  // username no metadata do usuário.
   return `${username}@cidadevalores.local`;
 }
 
@@ -36,10 +32,10 @@ export function AuthProvider({ children }) {
         const { data } = await supabase.auth.getUser();
         if (data?.user) {
           setUser(data.user);
-          debugLog('Auth: sessão restaurada para', data.user.email);
+          debugLog('Auth: sessao restaurada para', data.user.email);
         }
       } catch {
-        debugLog('Auth: sem sessão ativa');
+        debugLog('Auth: sem sessao ativa');
       }
       setLoading(false);
     };
@@ -48,7 +44,7 @@ export function AuthProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    if (config.isMock) return;
+    if (config.isMock) return undefined;
 
     const { data } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user ?? null);
@@ -99,10 +95,4 @@ export function AuthProvider({ children }) {
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
-}
-
-export function useAuth() {
-  const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error('useAuth deve ser usado dentro de AuthProvider');
-  return ctx;
 }

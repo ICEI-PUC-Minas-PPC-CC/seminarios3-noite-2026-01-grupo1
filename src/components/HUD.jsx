@@ -1,4 +1,4 @@
-import { useGame } from '../contexts/GameContext';
+import { useGame } from '../contexts/useGame';
 
 export default function HUD() {
   const { lives, score, currentScene } = useGame();

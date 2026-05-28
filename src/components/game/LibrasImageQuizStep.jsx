@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import imgDesculpa from '../../assets/libras/desculpa.png';
 import imgDia from '../../assets/libras/dia.png';
@@ -11,7 +11,7 @@ const LIBRAS_IMAGES = {
   dia: imgDia,
   feio: imgFeio,
   obrigada: imgObrigada,
-  porfavor: imgPorFavor
+  porfavor: imgPorFavor,
 };
 
 export default function LibrasImageQuizStep({ step, onCorrect, onWrong }) {
@@ -19,19 +19,17 @@ export default function LibrasImageQuizStep({ step, onCorrect, onWrong }) {
   const [showFeedback, setShowFeedback] = useState(false);
   const [isWrong, setIsWrong] = useState(false);
 
-  const correctIds = step.options.filter(opt => opt.correct).map(opt => opt.id);
+  const correctIds = step.options.filter((opt) => opt.correct).map((opt) => opt.id);
 
   const handleSelect = (opt) => {
-    if (showFeedback && !isWrong) return; // Prevent clicking while success feedback is showing
+    if (showFeedback && !isWrong) return;
 
     if (!opt.correct) {
-      // Wrong choice: immediate failure
       setSelectedIds([opt.id]);
       setIsWrong(true);
       setShowFeedback(true);
       onWrong();
-      
-      // Reset after a delay so they can try again
+
       setTimeout(() => {
         setSelectedIds([]);
         setIsWrong(false);
@@ -40,13 +38,11 @@ export default function LibrasImageQuizStep({ step, onCorrect, onWrong }) {
       return;
     }
 
-    // Correct choice: check if already selected
     if (selectedIds.includes(opt.id)) return;
 
     const newSelected = [...selectedIds, opt.id];
     setSelectedIds(newSelected);
 
-    // Check if all correct ones are selected
     if (newSelected.length === correctIds.length) {
       setShowFeedback(true);
       setIsWrong(false);
@@ -61,30 +57,33 @@ export default function LibrasImageQuizStep({ step, onCorrect, onWrong }) {
       <div className="dialogue-box" style={{ marginBottom: 'var(--space-lg)' }}>
         <p className="dialogue-text">🤟 {step.text}</p>
       </div>
-      
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(5, 1fr)', 
-        gap: 'var(--space-sm)',
-        padding: 'var(--space-sm)',
-        width: '100%'
-      }}>
+
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(5, 1fr)',
+          gap: 'var(--space-sm)',
+          padding: 'var(--space-sm)',
+          width: '100%',
+        }}
+      >
         {step.options.map((opt) => {
           const isSelected = selectedIds.includes(opt.id);
           let borderColor = 'var(--border)';
-          
+
           if (isSelected) {
             borderColor = opt.correct ? 'var(--success)' : 'var(--error)';
           }
-          
+
           return (
-            <div key={opt.id}
+            <div
+              key={opt.id}
               className={`card ${isSelected && !opt.correct ? 'flash-error' : ''} ${isSelected && opt.correct && selectedIds.length === correctIds.length ? 'flash-success' : ''}`}
               onClick={() => handleSelect(opt)}
               style={{
-                textAlign: 'center', 
+                textAlign: 'center',
                 cursor: 'pointer',
-                borderColor, 
+                borderColor,
                 padding: 'var(--space-xs)',
                 transition: 'all 0.3s var(--ease)',
                 transform: isSelected ? 'scale(1.05)' : 'scale(1)',
@@ -93,18 +92,19 @@ export default function LibrasImageQuizStep({ step, onCorrect, onWrong }) {
                 alignItems: 'center',
                 justifyContent: 'center',
                 minHeight: '140px',
-                background: isSelected && opt.correct ? 'rgba(0, 184, 148, 0.1)' : 'var(--bg-card)'
-              }}>
-              <img 
-                src={LIBRAS_IMAGES[opt.image]} 
-                alt="Sinal em Libras" 
-                style={{ 
-                  width: '100%', 
-                  height: 'auto', 
+                background: isSelected && opt.correct ? 'rgba(0, 184, 148, 0.1)' : 'var(--bg-card)',
+              }}
+            >
+              <img
+                src={LIBRAS_IMAGES[opt.image]}
+                alt="Sinal em Libras"
+                style={{
+                  width: '100%',
+                  height: 'auto',
                   maxHeight: '120px',
                   objectFit: 'contain',
-                  borderRadius: 'var(--radius-md)'
-                }} 
+                  borderRadius: 'var(--radius-md)',
+                }}
               />
             </div>
           );
@@ -112,16 +112,23 @@ export default function LibrasImageQuizStep({ step, onCorrect, onWrong }) {
       </div>
 
       {showFeedback && (
-        <div className="card animate-scale" style={{
-          marginTop: 'var(--space-lg)', textAlign: 'center',
-          borderColor: isWrong ? 'var(--error)' : 'var(--success)',
-          padding: 'var(--space-md)'
-        }}>
-          <p style={{
-            color: isWrong ? 'var(--error)' : 'var(--success)',
-            fontSize: 'var(--fs-lg)', fontWeight: 600
-          }}>
-            {isWrong ? '❌ Tente novamente! Esse sinal não é uma das palavras mágicas.' : '✅ Excelente! Você encontrou os dois sinais!'}
+        <div
+          className="card animate-scale"
+          style={{
+            marginTop: 'var(--space-lg)',
+            textAlign: 'center',
+            borderColor: isWrong ? 'var(--error)' : 'var(--success)',
+            padding: 'var(--space-md)',
+          }}
+        >
+          <p
+            style={{
+              color: isWrong ? 'var(--error)' : 'var(--success)',
+              fontSize: 'var(--fs-lg)',
+              fontWeight: 600,
+            }}
+          >
+            {isWrong ? 'Tente novamente! Esse sinal nao e uma das palavras magicas.' : 'Excelente! Voce encontrou os dois sinais!'}
           </p>
         </div>
       )}

@@ -1,4 +1,5 @@
-import { GameProvider, useGame } from './contexts/GameContext'
+import { GameProvider } from './contexts/GameContext'
+import { useGame } from './contexts/useGame'
 import HUD from './components/HUD'
 import SceneEngine from './components/SceneEngine'
 import GameOver from './components/GameOver'
@@ -6,7 +7,8 @@ import CompletionScreen from './components/CompletionScreen'
 import Login from './pages/Login'
 import CityMap from './pages/CityMap'
 import { CharacterSelectStep } from './components/game'
-import { AuthProvider, useAuth } from './contexts/AuthContext'
+import { AuthProvider } from './contexts/AuthContext'
+import { useAuth } from './contexts/useAuth'
 import './index.css'
 
 /**
