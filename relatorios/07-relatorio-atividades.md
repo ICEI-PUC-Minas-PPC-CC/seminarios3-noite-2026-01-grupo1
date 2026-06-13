@@ -13,7 +13,7 @@
 | Disciplina | Seminários III |
 | Comunidade atendida | Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra |
 | Software desenvolvido | Desenvolvimento em React de um jogo sobre Valores, com acessibilidade para usuários com qualquer nível de deficiência auditiva, tendo como público-alvo os alunos da escola Tarso de Coimbra. |
-| URL da aplicação (se hospedada) | |
+| URL da aplicação | |
 
 ## Cronograma de Desenvolvimento
 
