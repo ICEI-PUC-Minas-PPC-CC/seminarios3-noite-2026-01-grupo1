@@ -21,16 +21,16 @@
 
 | Data | Etapa | Descrição do que foi feito |
 | ------ | ------- | --------------------------- |
-| | Formação do grupo | |
-| | Contato inicial com a comunidade | |
-| | Levantamento de demandas | |
-| | Definição de requisitos | |
-| | Prototipação / wireframes | |
-| | Desenvolvimento — Sprint 1 | |
-| | Validação intermediária com a comunidade | |
-| | Desenvolvimento — Sprint 2 | |
-| | Testes e ajustes | |
-| | Deploy em nuvem | |
+| 18/02/2026 | Formação do grupo | Nessa data foi formado o grupo |
+| 01/03/2026 | Contato inicial com a comunidade | Entramos em contato com a comunidade para apresentação do projeto |
+| 01/03/2026 | Levantamento de demandas | Foi levantado as demandas junto com o contato a comunidade |
+| 15/03/2026 | Definição de requisitos | Foi decidido os requisitos do projeto a par das necessidades da comunidade |
+| 21/03/2026 | Prototipação / wireframes | Realizado os protótipos no figma e artes do projeto |
+| 29/03/2026 | Desenvolvimento — Sprint 1 | Inicio do desenvolvimento do projeto |
+| 13/04/2026 | Validação intermediária com a comunidade | Validação feita com sucesso |
+| 13/04/2026 | Desenvolvimento — Sprint 2 | Inicio do desenvolvimento pra mobile |
+| 03/05/2026 | Testes e ajustes | Realizado testes e melhoria na arquitetura do código |
+| 10/05/2026 | Deploy em nuvem | Projeto foi hospedado em Vercel |
 | | **Entrega presencial do software** | |
 | | Preenchimento dos relatórios | |
 
