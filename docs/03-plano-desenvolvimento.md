@@ -22,7 +22,7 @@
 | 1 | 18/02 à 25/02 | Formação do grupo | Todos | feito |
 | 2 | 01/03 à 07/03 | Contato com comunidade e Levantamento de demandas | Thiago | feito |
 | 3 | 15/03 à 21/03 | Definição de requisitos | Todos | feito |
-| 4 | 15/03 à 21/03 | Prototipação / wireframes | Thiago, Danthe e Luis | feito |
+| 4 | 22/03 à 28/03 | Prototipação / wireframes | Thiago, Danthe e Luis | feito |
 | 5 | 29/03 a 04/04 | Desenvolvimento — Sprint 1 | Danthe e Laura | feito |
 | 6 | 05/04 a 09/04 | Desenvolvimento — Sprint 1 | Luis e Isabela | feito |
 | 7 | 13/04 a 18/04 | Validação com a comunidade | Thiago | não iniciado |
