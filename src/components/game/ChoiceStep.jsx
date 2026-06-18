@@ -3,16 +3,29 @@ import { useState } from 'react';
 export default function ChoiceStep({ step, onCorrect, onWrong }) {
   const [selected, setSelected] = useState(null);
   const [showFeedback, setShowFeedback] = useState(false);
+  const [canRetry, setCanRetry] = useState(false);
 
   const handleChoice = (option) => {
     if (selected !== null) return;
     setSelected(option.id);
     setShowFeedback(true);
+    setCanRetry(false);
     setTimeout(() => {
       if (option.correct) onCorrect(step.points || 10);
-      else onWrong();
+      else {
+        onWrong();
+        setCanRetry(true);
+      }
     }, 1800);
   };
+
+  const handleRetry = () => {
+    setSelected(null);
+    setShowFeedback(false);
+    setCanRetry(false);
+  };
+
+  const selectedOption = step.options.find((option) => option.id === selected);
 
   return (
     <div className="animate-in">
@@ -37,17 +50,27 @@ export default function ChoiceStep({ step, onCorrect, onWrong }) {
       {showFeedback && selected !== null && (
         <div className="card animate-scale" style={{
           marginTop: 'var(--space-md)',
-          borderColor: step.options.find(o => o.id === selected)?.correct ? 'var(--success)' : 'var(--error)',
+          borderColor: selectedOption?.correct ? 'var(--success)' : 'var(--error)',
           textAlign: 'center'
         }}>
           <p style={{
-            color: step.options.find(o => o.id === selected)?.correct ? 'var(--success)' : 'var(--error)',
+            color: selectedOption?.correct ? 'var(--success)' : 'var(--error)',
             fontSize: 'var(--fs-lg)', fontWeight: 600
           }}>
             {step.options.find(o => o.id === selected)?.correct ? '✅ ' : '❌ '}
-            {step.options.find(o => o.id === selected)?.feedback ||
-              (step.options.find(o => o.id === selected)?.correct ? step.feedback?.correct : step.feedback?.wrong)}
+            {selectedOption?.feedback ||
+              (selectedOption?.correct ? step.feedback?.correct : step.feedback?.wrong)}
           </p>
+          {!selectedOption?.correct && canRetry && (
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={handleRetry}
+              style={{ marginTop: 'var(--space-md)' }}
+            >
+              Tentar novamente
+            </button>
+          )}
         </div>
       )}
     </div>
