@@ -13,7 +13,7 @@
 | Disciplina | Seminários III |
 | Comunidade atendida | Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra |
 | Software desenvolvido | Desenvolvimento em React de um jogo sobre Valores, com acessibilidade para usuários com qualquer nível de deficiência auditiva, tendo como público-alvo os alunos da escola Tarso de Coimbra. |
-| URL da aplicação (se hospedada) | |
+| URL da aplicação | https://cidadedosvalores.vercel.app |
 
 ## Cronograma de Desenvolvimento
 
@@ -21,26 +21,26 @@
 
 | Data | Etapa | Descrição do que foi feito |
 | ------ | ------- | --------------------------- |
-| | Formação do grupo | |
-| | Contato inicial com a comunidade | |
-| | Levantamento de demandas | |
-| | Definição de requisitos | |
-| | Prototipação / wireframes | |
-| | Desenvolvimento — Sprint 1 | |
-| | Validação intermediária com a comunidade | |
-| | Desenvolvimento — Sprint 2 | |
-| | Testes e ajustes | |
-| | Deploy em nuvem | |
+| 18/02/2026 | Formação do grupo | Nessa data foi formado o grupo |
+| 01/03/2026 | Contato inicial com a comunidade | Entramos em contato com a comunidade para apresentação do projeto |
+| 01/03/2026 | Levantamento de demandas | Foi levantado as demandas junto com o contato a comunidade |
+| 15/03/2026 | Definição de requisitos | Foi decidido os requisitos do projeto a par das necessidades da comunidade |
+| 21/03/2026 | Prototipação / wireframes | Realizado os protótipos no figma e artes do projeto |
+| 29/03/2026 | Desenvolvimento — Sprint 1 | Inicio do desenvolvimento do projeto |
+| 13/04/2026 | Validação intermediária com a comunidade | Validação feita com sucesso |
+| 13/04/2026 | Desenvolvimento — Sprint 2 | Inicio do desenvolvimento pra mobile |
+| 03/05/2026 | Testes e ajustes | Realizado testes e melhoria na arquitetura do código |
+| 10/05/2026 | Deploy em nuvem | Projeto foi hospedado em Vercel |
 | | **Entrega presencial do software** | |
 | | Preenchimento dos relatórios | |
 
 ## Descrição das Atividades Realizadas
 
-(Descreva de forma detalhada as atividades desenvolvidas ao longo do semestre.)
+Ao longo do semestre, o projeto seguiu uma metodologia estruturada, envolvendo etapas de levantamento de necessidades, planejamento, prototipação, desenvolvimento iterativo, validação junto à comunidade, testes e implantação. A participação ativa da comunidade durante o processo foi essencial para garantir que a solução desenvolvida atendesse efetivamente às demandas identificadas, resultando em um produto funcional, acessível e alinhado aos objetivos propostos.
 
 ### Levantamento de demandas
 
-(Como foi o contato com a comunidade? Quantas reuniões? Quais demandas foram identificadas?)
+O contato com a comunidade ocorreu em duas reuniões. Na primeira, o projeto foi apresentado e foram levantadas as principais necessidades da comunidade, que orientaram a definição dos requisitos. Entre as demandas identificadas estavam a criação de funcionalidades relacionadas aos jogos, uso de mapa, adaptação para dispositivos móveis e uma interface de fácil utilização. Na segunda reunião, foi realizada a validação do projeto, que recebeu retorno positivo da comunidade.
 
 ### Desenvolvimento
 
