@@ -13,7 +13,7 @@
 | Disciplina | Seminários III |
 | Comunidade atendida | Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra |
 | Software desenvolvido | Desenvolvimento em React de um jogo sobre Valores, com acessibilidade para usuários com qualquer nível de deficiência auditiva, tendo como público-alvo os alunos da escola Tarso de Coimbra. |
-| URL da aplicação | |
+| URL da aplicação | https://cidadedosvalores.vercel.app |
 
 ## Cronograma de Desenvolvimento
 
@@ -36,11 +36,11 @@
 
 ## Descrição das Atividades Realizadas
 
-(Descreva de forma detalhada as atividades desenvolvidas ao longo do semestre.)
+Ao longo do semestre, o projeto seguiu uma metodologia estruturada, envolvendo etapas de levantamento de necessidades, planejamento, prototipação, desenvolvimento iterativo, validação junto à comunidade, testes e implantação. A participação ativa da comunidade durante o processo foi essencial para garantir que a solução desenvolvida atendesse efetivamente às demandas identificadas, resultando em um produto funcional, acessível e alinhado aos objetivos propostos.
 
 ### Levantamento de demandas
 
-(Como foi o contato com a comunidade? Quantas reuniões? Quais demandas foram identificadas?)
+O contato com a comunidade ocorreu em duas reuniões. Na primeira, o projeto foi apresentado e foram levantadas as principais necessidades da comunidade, que orientaram a definição dos requisitos. Entre as demandas identificadas estavam a criação de funcionalidades relacionadas aos jogos, uso de mapa, adaptação para dispositivos móveis e uma interface de fácil utilização. Na segunda reunião, foi realizada a validação do projeto, que recebeu retorno positivo da comunidade.
 
 ### Desenvolvimento
 
