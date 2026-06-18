@@ -137,7 +137,7 @@ Prosseguir com o desenvolvimento do projeto a partir das definições estabeleci
 
 ### Semana 08 — 19/04/26 a 25/04/26   
 
-**O que foi feito:** Desenvolvimento inicial da sprint 2 - mapa, novos jogos e início do desenvolvimento para mobile.  
+**O que foi feito:** Desenvolvimento inicial da sprint 2 - mapa, novos jogos  
 
 **Quem participou:** Laura e Danthe.  
 
