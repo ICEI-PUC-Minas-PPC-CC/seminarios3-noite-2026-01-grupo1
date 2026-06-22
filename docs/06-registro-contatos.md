@@ -29,43 +29,6 @@ OBJETIVOS DO PROJETO: estimulação na comunicação LIBRAS, favorecer a intera�
 **Encaminhamentos:**
 Protótipo do projeto entregue.
 
----
-
-### Contato #2
-
-| Campo | Informação |
-| ------- | ----------- |
-| Data | |
-| Forma de contato | |
-| Participantes do grupo | |
-| Participantes da comunidade | |
-| Objetivo do contato | |
-
-**Resumo do que foi tratado:**
-
-**Encaminhamentos:**
-
----
-
-### Contato #3
-
-| Campo | Informação |
-| ------- | ----------- |
-| Data | |
-| Forma de contato | |
-| Participantes do grupo | |
-| Participantes da comunidade | |
-| Objetivo do contato | |
-
-**Resumo do que foi tratado:**
-
-**Encaminhamentos:**
-
----
-
-(Copie o bloco acima para cada contato adicional.)
-
----
 
 ## Resumo das Demandas Identificadas
 
