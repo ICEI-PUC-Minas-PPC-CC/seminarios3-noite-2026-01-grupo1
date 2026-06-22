@@ -82,3 +82,19 @@ O grupo tem liberdade de escolha. Sugestões do professor:
 - Idealmente, o software deve ser **hospedado em nuvem** para acesso pela Internet.
 - Sem o desenvolvimento do software, entrega presencial e preenchimento dos relatórios, o grupo **não pode ser aprovado**.
 - Manter os commits de forma organizada , fazendo PR a cada novo commit em uma branch especifica com o objetivo de uma melhor documentação e visualição do que foi feito.
+
+---
+
+## 📸 Fotos da Entrega Presencial
+
+Abaixo estão registradas as evidências fotográficas das reuniões, validações e entrega do projeto com a comunidade do Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra:
+
+| Participantes da Reunião Online | Encontro com a Coordenação Escolar |
+|:---:|:---:|
+| ![Participantes Online](evidencias/fotos/WhatsApp%20Image%202026-06-22%20at%2014.24.05%20%281%29.jpeg) | ![Coordenação Escolar](evidencias/fotos/WhatsApp%20Image%202026-06-22%20at%2014.24.06.jpeg) |
+
+| Apresentação das Funcionalidades (Foto 1) | Apresentação das Funcionalidades (Foto 2) |
+|:---:|:---:|
+| ![Apresentação 1](evidencias/fotos/WhatsApp%20Image%202026-06-22%20at%2014.24.05.jpeg) | ![Apresentação 2](evidencias/fotos/WhatsApp%20Image%202026-06-22%20at%2014.24.06%20%281%29.jpeg) |
+
+

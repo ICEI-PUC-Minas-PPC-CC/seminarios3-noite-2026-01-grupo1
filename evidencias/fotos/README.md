@@ -4,13 +4,14 @@ Aqui estão registradas as fotos tiradas durante a entrega presencial e validaç
 
 ## Galeria de Fotos
 
-### Participantes Online
-![Participantes Online](Participantes_online.jpeg)
+### Participantes da Reunião Online
+![Participantes Online](WhatsApp%20Image%202026-06-22%20at%2014.24.05%20%281%29.jpeg)
 
-### Apresentação das Funcionalidades
-![Apresentação das Funcionalidades 1](apresentacao_funcionalidades.jpeg)
+### Apresentação das Funcionalidades da Aplicação (Foto 1)
+![Apresentação 1](WhatsApp%20Image%202026-06-22%20at%2014.24.05.jpeg)
 
-![Apresentação das Funcionalidades 2](apresentacao_funcionalidades2.jpeg)
+### Apresentação das Funcionalidades da Aplicação (Foto 2)
+![Apresentação 2](WhatsApp%20Image%202026-06-22%20at%2014.24.06%20%281%29.jpeg)
 
-### Reunião com a Coordenação da Escola
-![Coordenador da Escola](coordenador_escola.jpeg)
+### Encontro com a Coordenação Escolar
+![Coordenação Escolar](WhatsApp%20Image%202026-06-22%20at%2014.24.06.jpeg)
