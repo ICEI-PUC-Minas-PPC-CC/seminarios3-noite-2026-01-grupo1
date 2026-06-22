@@ -64,11 +64,11 @@ As demandas foram levantadas a partir de uma reunião online no Microsoft Teams,
 
 | Campo | Informação |
 | ------- | ----------- |
-| Data prevista para entrega | |
-| Horário de início | |
-| Horário de término | |
-| Local de realização | |
-| Data alternativa | |
+| Data prevista para entrega | 18/06 |
+| Horário de início | 16:00h |
+| Horário de término | 16:30h |
+| Local de realização | PUC Minas - Poços de Caldas; Lab 5|
+| Data alternativa | 23/06 |
 
 > **Obs.:** A entrega deve ser, preferencialmente, presencial. O agendamento está sujeito à confirmação pelo professor responsável.
 
