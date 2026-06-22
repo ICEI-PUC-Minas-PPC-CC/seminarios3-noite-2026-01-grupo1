@@ -58,7 +58,7 @@ A aplicação é um jogo de navegador baseado em decisões, no qual o jogador ad
 | Front-end | Html, React |
 | Back-end (se houver) | JavaScript |
 | Banco de dados (se houver) | | postgres/ sql
-| Hospedagem | Github Pages|
+| Hospedagem | Vercel|
 | Outras ferramentas | |
 
 ## 7. Protótipo / Wireframes

@@ -31,7 +31,7 @@
 | 13/04/2026 | Desenvolvimento — Sprint 2 | Inicio do desenvolvimento pra mobile |
 | 03/05/2026 | Testes e ajustes | Realizado testes e melhoria na arquitetura do código |
 | 10/05/2026 | Deploy em nuvem | Projeto foi hospedado em Vercel |
-| | **Entrega presencial do software** | |
+| 18/06/2026 | **Entrega presencial do software** | Foi feita a apresentação do projeto para a comunidade |
 | | Preenchimento dos relatórios | |
 
 ## Descrição das Atividades Realizadas

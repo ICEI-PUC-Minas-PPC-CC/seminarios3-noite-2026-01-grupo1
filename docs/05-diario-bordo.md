@@ -199,20 +199,20 @@ Validação final com a comunidade.
 
 ## Registro da Entrega Presencial
 
-**Data:** **_/_**/**\_  
-**Local:\*\*  
-**Horário:** \_** às \_\_\_  
-**Participantes do grupo presentes:\*\*  
-**Nº de participantes da comunidade:**
+**Data:** 18/06/26    
+**Local:** PUC Minas     
+**Horário:** 16:00h até 16:30h   
+**Participantes do grupo presentes:** Danthe, Luis, Isabela, Laura, Thiago    
+**Nº de participantes da comunidade:** 7  
 
 ### Descrição da entrega
 
-(Relatar como foi a entrega: demonstração do software, reação dos usuários, dúvidas que surgiram, etc.)
+A entrega foi feita sem problemas, os membros da comunidade acharam o jogo interessante e divertido, apesar da dificuldade inicial de ter que criar um usuário e uma senha.  
 
 ### Feedback da comunidade
 
-(O que os usuários e responsáveis da comunidade acharam do software?)
+Gostaram muito, falaram que ele irá ajudar muito no desenvolvimento dos valores da comunidade ao longo do ano, e a integração com o VLibras foi um diferencial.  
 
 ### Lições aprendidas
 
-(O que o grupo faria diferente no desenvolvimento? O que deu certo?)
+Começar o desenvolvimento mais antecipadamente nos daria mais tempo para refinar as artes e animações, porém o resultado geral foi muito satisfatório - resultado alcançado através da disciplina em seguir a organização semanal relatada no diário de bordo.
