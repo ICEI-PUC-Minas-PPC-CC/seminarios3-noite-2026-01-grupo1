@@ -199,11 +199,11 @@ Validação final com a comunidade.
 
 ## Registro da Entrega Presencial
 
-**Data:** 18/06/26 
-**Local:** PUC Minas  
-**Horário:** 16:00h até 16:30h 
-**Participantes do grupo presentes:** Danthe, Luis, Isabela, Laura, Thiago  
-**Nº de participantes da comunidade:** 7
+**Data:** 18/06/26    
+**Local:** PUC Minas     
+**Horário:** 16:00h até 16:30h   
+**Participantes do grupo presentes:** Danthe, Luis, Isabela, Laura, Thiago    
+**Nº de participantes da comunidade:** 7  
 
 ### Descrição da entrega
 
