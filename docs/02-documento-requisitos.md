@@ -10,16 +10,35 @@
 
 A aplicação é um jogo de navegador baseado em decisões, no qual o jogador administra uma cidade e aprende sobre valores como respeito, paciência e gentileza por meio das consequências de suas escolhas. Ela é destinada principalmente a estudantes do Tarso de Coimbra e ao público jovem em contexto educacional. O projeto busca promover a reflexão ética e social, além de contribuir para a inclusão ao ensinar conceitos também em LIBRAS.
 
+### 1.1. Objetivos do Projeto
+
+#### Objetivo Geral
+Desenvolver uma aplicação web gamificada e interativa voltada ao ensino de valores éticos e de cidadania para os alunos do Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra, garantindo acessibilidade universal e autonomia para a comunidade surda e com deficiência auditiva.
+
+#### Objetivos Específicos
+1. **Fomentar a Educação em Valores:** Criar dinâmicas de jogo baseadas em escolhas cotidianas que permitam aos alunos compreender o impacto de atitudes éticas (como empatia, respeito, tolerância e paciência) no convívio social.
+2. **Estimular a Comunicação e Vocabulário em Libras:** Integrar mídias visuais e referências em Língua Brasileira de Sinais (Libras) associadas aos conceitos éticos apresentados, auxiliando o processo pedagógico bilíngue da instituição.
+3. **Assegurar Acessibilidade e Autonomia:** Implementar uma interface inteiramente voltada à acessibilidade auditiva, eliminando barreiras de comunicação e dependência de áudio, com feedbacks exclusivamente visuais e táteis (se compatível).
+4. **Promover a Inclusão Digital e Social:** Oferecer uma ferramenta lúdico-pedagógica simplificada e atrativa que estimule a inserção tecnológica dos alunos e promova momentos de descontração e aprendizagem compartilhada com seus familiares e educadores.
+5. **Entregar uma Interface Intuitiva e Responsiva:** Projetar um layout responsivo (adaptado para diferentes telas) que minimize a carga cognitiva e priorize ícones e guias visuais, adequado ao nível de letramento tecnológico do público.
+
 ## 2. Público-Alvo
 
 | Campo | Informação |
 | ------- | ----------- |
-| Perfil dos usuários | Estudantes, Membros do Centro Educacional |
-| Faixa etária | 12 anos ou mais |
-| Necessidades de acessibilidade | Deficiência auditiva/ Surdez |
-| Nível de familiaridade com tecnologia | Pouca |
+| Perfil dos usuários | Estudantes e membros da comunidade escolar do Centro Dr. Tarso de Coimbra |
+| Faixa etária | A partir de 12 anos (podendo englobar outras idades conforme orientação pedagógica) |
+| Necessidades de acessibilidade | Deficiência auditiva e surdez (usuários de Libras e/ou com desafios no letramento em Português escrito) |
+| Nível de familiaridade com tecnologia | Baixo a moderado (necessitam de interfaces de simples navegação) |
 
-> **Lembrete (Tarso de Coimbra):** Os usuários podem ter deficiência auditiva/surdez. A interface deve ser **visual, intuitiva e de baixa complexidade**. Priorize elementos visuais (imagens, ícones, cores) sobre texto extenso.
+### 2.1. Descrição Detalhada do Público-Alvo
+
+O público-alvo prioritário deste projeto é composto pelos alunos assistidos pelo **Centro Municipal de Atendimento Educacional Especializado Dr. Tarso de Coimbra** em Poços de Caldas - MG, que apresenta as seguintes particularidades:
+
+* **Características Linguísticas e Cognitivas:** Muitos alunos utilizam a Língua Brasileira de Sinais (Libras) como sua língua de instrução principal (L1), estando em fases variadas de aprendizado e consolidação da língua escrita (L2). Por isso, textos excessivamente longos ou vocábulos complexos podem se tornar barreiras.
+* **Barreiras Sensoriais:** Dada a presença de deficiência auditiva e surdez, qualquer feedback sonoro (como efeitos de acerto/erro, música ou instruções faladas) é ineficaz se não for traduzido para estímulos visuais claros (cores vivas, animações, luzes, ícones e gestos em Libras).
+* **Familiaridade Tecnológica:** Por possuírem pouca familiaridade com sistemas complexos de navegação em computadores de mesa, necessitam de um sistema com mecânica simplificada (ex: navegação baseada puramente em cliques no mouse ou toques na tela), com botões amplos e fluxos lineares de decisão.
+* **Público Secundário (Apoio):** Professores, intérpretes de Libras e familiares dos alunos, que atuarão como facilitadores e também se beneficiarão de uma ferramenta que integre a diversão em família com o aprendizado de atitudes éticas.
 
 ## 3. Requisitos Funcionais
 
